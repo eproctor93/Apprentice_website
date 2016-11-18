@@ -61,7 +61,7 @@ alternatively you can add a single file by typing
 $ git add filename.txt
 ```
 
-now we will check the status again
+now we will check the status again to see if the modified files show in green (this means they are added)
 
 ```
 $ git status
@@ -74,14 +74,14 @@ type
 $ git commit -m "Enter a message that represents the changes"
 ```
 
-now we want to push the file to the website to do this type
+now we want to push the file and branch to the website to do this type
 ```
-$ git push
+$ git push --set-upstream origin nameofbranch
 ```
 
-if this doesnt work this may be because you will need to type
+after the branch is made you will only need use the code below to add files to the branch
 ```
-$ git push --set-upstream origin flask-app
+$ git push
 ```
 now it should have pushed to the website including your new branch
 
