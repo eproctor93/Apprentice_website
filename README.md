@@ -4,23 +4,23 @@ This document will give the people working on this project.
 
 # Git Commands
 
-            git status
+    git status
 Viewing the changed files in your working directory.
 
-``` git diff: 
-``` 
+    git diff
+
 Viewing tracked file changes
 
-```git add. 
-```
+    git add. 
+    
 Add all current changes to the next commit.
 
-``` git add -p <file:
- ``` 
+    git add -p <file:
+
  Add some changes that was created in the files to the next commit. 
  
-``` git commit -a:
-  ``` 
+    git commit -a:
+ 
   Commit all local changes in tracked files
 
 # Branches
