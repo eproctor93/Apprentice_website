@@ -7,8 +7,8 @@ This document will give the people working on this project.
             git status
 Viewing the changed files in your working directory.
 
-```git diff: 
-```
+``` git diff: 
+``` 
 Viewing tracked file changes
 
 ```git add. 
