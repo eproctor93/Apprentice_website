@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿## Github commands
 
 ### How to git push and commit
@@ -13,6 +14,10 @@
 	9.	This pushes the files up to the branch.
 ￼ ￼```
 =======
+=======
+# Apprentice-Website
+
+>>>>>>> 7c8221e81ea7d3ba629b026d0a1030e9d047bb4b
 
 #Git-Help
 
@@ -84,4 +89,7 @@ after the branch is made you will only need use the code below to add files to t
 $ git push
 ```
 now it should have pushed to the website including your new branch
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7c8221e81ea7d3ba629b026d0a1030e9d047bb4b
