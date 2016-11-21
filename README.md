@@ -27,6 +27,16 @@ Commit all local changes in tracked files.
 
 This command commits everything which is in staging area to the local repo. -m means you are sending a commit message, so other people can see what was changed since last commit. 
 
+# Commit History
+
+    $ git log
+
+This command shows all the latest commits. Started from the newest commit that was made.
+
+    $ git log -p <file>
+
+If you wanted to see changes that were made to one file over time, you can do that by using the command above. 
+
 # Branches
     $ git branch -av
     
