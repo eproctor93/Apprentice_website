@@ -228,8 +228,28 @@ This document will give the people working on this project.
 
  This command deletes the branch off GitHub.
 
+ -----------------------------------
 
- ------------------------------------
+ ## Alex
+
+ ```
+ $ git checkout
+ ```
+ I've learnt the process of git checkout as it transfers the folder from one branch to another.
+ ```
+ $ git pull
+```
+Completes the transfer of files between all the branches from the repository.
+```
+$ git push
+```
+Commits the files that have been worked on back to the repository.
+```
+$ git commit -m "Text that represents the change"
+```
+Commits it to your local repository, which puts it in a status ready to push.
+ 
+------------------------------------
 
 # Static Site
 
