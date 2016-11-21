@@ -227,8 +227,6 @@ This document will give the people working on this project.
      $ git branch -dr <remote/branch>
 
  This command deletes the branch off GitHub.
-<<<<<<< HEAD
-=======
 
 
  ------------------------------------
@@ -241,4 +239,3 @@ Currently this is the quick setup of the static site, if we need other things ad
 ## To use it
 
 to use this is simple enough, so long as all 3 files are in the same area it will work, open the Homepage.html and there is links at the top to both homepage and the alternate page, this is all linked to the css file aswell so it should have a grey background-color with some simple text in the middle of the page
->>>>>>> master
