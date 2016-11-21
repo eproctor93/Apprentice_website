@@ -88,4 +88,7 @@ Adds new remote repository. For example, if you had the same stuff saved on gitl
 
 Pushes all of the commits from the staging area to the remote repo. In our case it is Github.
 
-
+    $ git push --set-upstream origin branch_name
+  
+   Pushes the newly created branch to github. Alternatively, you could create a new branch on Github. 
+    
