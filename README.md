@@ -17,36 +17,40 @@ Add all current changes to the next commit.
 
     $ git add -p <file:
 
- Add some changes that was created in the files to the next commit. 
+Add some changes that was created in the files to the next commit. 
  
     $ git commit -a:
  
-  Commit all local changes in tracked files.
+Commit all local changes in tracked files.
+
+    $ git commit -m "changed action"
+
+This command commits everything which is in staging area to the local repo. -m means you are sending a commit message, so other people can see what was changed since last commit. 
 
 # Branches
     $ git branch -av
     
-   This command list all the existing branches in the repository
+This command list all the existing branches in the repository
   
     $ git checkout <branch-name>
   
-  This command points the branch that you want to work on, in your working directory (HEAD Branch)
+This command points the branch that you want to work on, in your working directory (HEAD Branch)
   
     $ git branch <new-branch>  
     
-  This command creates a new branch in the repository.
+This command creates a new branch in the repository.
   
     $ git checkout --track <remote/branch>
    
-   This command creates a new tracking branch based on a remote branch.
+This command creates a new tracking branch based on a remote branch.
    
     $ git branch -d <branch>
    
-   This command deletes a branch locally.
+This command deletes a branch locally.
    
 # Update and Publish
     $ git remote -v
- This command shows all the configured remotes linked to your local repository. Eg github. This is an example:
+This command shows all the configured remotes linked to your local repository. Eg github. This is an example:
  
     $ git remote -v
     origin  https://github.com/LR-Apprentices/Apprentice-Website.git (fetch)
@@ -54,7 +58,7 @@ Add all current changes to the next commit.
 
     $ git remote origin
  
- Shows information about the remote repositorys stored online. Here is an example of the output of our repo.
+Shows information about the remote repositorys stored online. Here is an example of the output of our repo.
    
         * remote origin
         Fetch URL: https://github.com/LR-Apprentices/Apprentice-Website.git
@@ -80,15 +84,26 @@ Hopefully that should give you more of an idea.
 
     $ git remote add <shortname> <url>
                
-
-
 Adds new remote repository. For example, if you had the same stuff saved on gitlab, you can add it.
 
     $ git push
 
-Pushes all of the commits from the staging area to the remote repo. In our case it is Github.
+Pushes all of the commits from the staging area to the remote repo. In our case it is Github. Or you can just choose to push one file. 
 
     $ git push --set-upstream origin branch_name
   
-   Pushes the newly created branch to github. Alternatively, you could create a new branch on Github. 
+Pushes the newly created branch to github. Alternatively, you could create a new branch on Github. 
     
+    $ git pull 
+  
+Downloads the changes that is done from all branches and commits from other machines onto your working directory.
+  
+    $ git fetch
+   
+Fetches all the changes from all of the remote repos, but it doesn't affect the branch you are currently on. 
+   
+    $ git branch -dr <remote/branch>
+
+This command deletes the branch off GitHub. 
+
+
