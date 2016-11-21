@@ -75,10 +75,17 @@ Add all current changes to the next commit.
     Jess         pushes to Jess         (up to date)
     Lukes-Branch pushes to Lukes-Branch (up to date)
     master       pushes to master       (up to date)
+        
+Hopefully that should give you more of an idea.
 
-               
     $ git remote add <shortname> <url>
+               
+
 
 Adds new remote repository. For example, if you had the same stuff saved on gitlab, you can add it.
+
+    $ git push
+
+Pushes all of the commits from the staging area to the remote repo. In our case it is Github.
 
 
