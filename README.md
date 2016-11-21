@@ -26,6 +26,10 @@
 	9.	This pushes the files up to the branch.
 ```
 
+## Useful link for learning Git
+
+https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud/git-branch-to-merge
+
 -----------------------------------------------------------------------------------------------------------------------------
 
 ## Luke
