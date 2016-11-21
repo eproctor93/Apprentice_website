@@ -230,14 +230,14 @@ This document will give the people working on this project.
 
  -----------------------------------
 
- ## Alex
+## Alex
 
- ```
- $ git checkout
- ```
- I've learnt the process of git checkout as it transfers the folder from one branch to another.
- ```
- $ git pull
+```
+$ git checkout
+```
+I've learnt the process of git checkout as it transfers the folder from one branch to another.
+```
+$ git pull
 ```
 Completes the transfer of files between all the branches from the repository.
 ```
