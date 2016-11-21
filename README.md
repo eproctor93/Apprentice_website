@@ -248,7 +248,7 @@ Commits the files that have been worked on back to the repository.
 $ git commit -m "Text that represents the change"
 ```
 Commits it to your local repository, which puts it in a status ready to push.
- 
+
 ------------------------------------
 
 # Static Site
