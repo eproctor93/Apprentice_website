@@ -1,6 +1,16 @@
-﻿# Apprentice-Website
+# Apprentice-Website
 
-## Anna's
+[Anna's commands](#anna)
+
+[Luke's commands](#luke)
+
+[Jess' commands](#jess)
+
+[Alex's commands](#alex)
+
+[The Static Site](#static-site)
+
+## Anna
 ## Github commands
 
 ### How to git push and commit
@@ -22,7 +32,7 @@ https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud/git-branc
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-## Luke's
+## Luke
 ## Git-Help
 
 How to link a folder to github (make sure git/git bash is installed)
@@ -98,7 +108,7 @@ now it should have pushed to the website including your new branch
 -----------------------------------------------------------------------------------------------------------------------------
 
 
-##Jess'
+## Jess
 ## Git-Help
 
 This is a website project created by the apprentices who joined Land Registry in October 2016, ready for next years apprentices.
@@ -217,3 +227,18 @@ This document will give the people working on this project.
      $ git branch -dr <remote/branch>
 
  This command deletes the branch off GitHub.
+<<<<<<< HEAD
+=======
+
+
+ ------------------------------------
+
+# Static Site
+
+Currently this is the quick setup of the static site, if we need other things added, I will add them, as for now this is the baseline that I have made for it
+--------------------------------
+
+## To use it
+
+to use this is simple enough, so long as all 3 files are in the same area it will work, open the Homepage.html and there is links at the top to both homepage and the alternate page, this is all linked to the css file aswell so it should have a grey background-color with some simple text in the middle of the page
+>>>>>>> master
