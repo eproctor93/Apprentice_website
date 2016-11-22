@@ -1,5 +1,54 @@
-body {
-  background-color: grey;
+body.home{background-color: grey;}
+body.html-css{background-color: #fff;}
+
+body.html{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #000;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.html-css h1{
+  color: rgb(29, 64, 22);
+  font-size: 50px;
+  background-color: rgb(3, 89, 45);
+  text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+  text-align: center;
+}
+
+.html-css h2{
+  font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+  font-weight: normal;
+  font-size: 1.75em;
+  letter-spacing: .2em;
+  line-height: 1.1em;
+  margin:0px;
+  text-align: center;
+  text-transform: uppercase;
+ }
+
+ .html-css h3{
+   color: rgb(29, 64, 22);
+   font-size: 50px;
+   background-color: rgb(3, 89, 45);
+   text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+   text-align: center;
+ }
+
+.html-css p{
+  font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+  font-weight: normal;
+  font-size: .75em;
+  letter-spacing: .1em;
+  line-height: 1.0em;
+  margin:0px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.html-css ul{
+  font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
 }
 
 #picture {
