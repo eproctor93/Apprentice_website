@@ -2,10 +2,68 @@ body {
   background-color: grey;
 }
 
-h1 {
+#picture {
+background: url("http://landregistry.data.gov.uk/app/ukhpi/assets/lr_logo_221_80-93aee0ed58f8ffa03202ad22bb67922901e9b355c799e0ce301dab19dceddd26.png") 105% 40% no-repeat; /* 50% 50% centers image in div */
+background-size:contain;
+padding-left: 100px;
+padding-right: 20px;
+margin-right: 20px;
+}
+
+.title1 {
   text-align: center;
 }
 
-p {
+.list1 {
+  border: solid;
+  border-radius: 6%;
+  border-color: lightgrey;
+  width: 12%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.title2 {
+  text-align: left;
+  color: lightgray;
+  -webkit-text-stroke: 0.4px black;
+  margin-left: 5%;
+}
+
+.list2 {
+  font-family: sans-serif;
+  color: lightgray;
+  width: 12%;
+  margin-left: 10%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+
+.title3 {
+  text-align: left;
+  margin-left: 2%;
+}
+
+#text3 {
+  margin-left: 3%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.title4 {
   text-align: center;
+}
+
+.list4 {
+  border: solid;
+  border-radius: 6%;
+  border-color: lightgrey;
+  width: 12%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }

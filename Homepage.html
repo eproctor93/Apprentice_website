@@ -1,17 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Homepage</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
-  <a href="Homepage.html">Homepage</a>
-  <a href="HTML-CSS.html">HTML+CSS</a>
-<h1> Static Site </h1>
-<p>
-This is the paragraph section<br>
-How much wood would a wood chuck, chuck if a wood chuck could chuck wood?
-</section>
-</p>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" id="picture" href="Homepage.html"></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="Homepage.html">Home</a></li>
+            <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Learning <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="HTML-CSS.html">HTML-CSS</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><div class="content">
+ </div><br><br>
+  <!-- <a href="Homepage.html">Homepage</a>
+  <a href="HTML-CSS.html">HTML+CSS</a>-->
+<h2 class="title1"> What you can learn on this website </h2>
+<ul class="list1">
+  <li>HTML + CSS</li>
+  <li>Python</li>
+  <li>Java</li>
+  <li>Git</li>
+  <li>SQL</li>
+</ul>
+<h2 class="title2"> What you can learn on this website </h2>
+<ul class="list2">
+  <li>HTML + CSS</li>
+  <li>Python</li>
+  <li>Java</li>
+  <li>Git</li>
+  <li>SQL</li>
+</ul>
+<h2 class="title4"><a  href="#jumbo" data-toggle="collapse" role ="button"> What you can learn on this website </a></h2>
+<div class = "collapse" id="jumbo">
+<div class="jumbotron">
+<ul class="list4">
+  <li>HTML + CSS</li>
+  <li>Python</li>
+  <li>Java</li>
+  <li>Git</li>
+  <li>SQL</li>
+</ul>
+</div></div>
+<h2 class="title3"> What you can learn on this website </h2>
+<div class="container" id="text3">
+  <div class="row">
+  <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+      <a href="#col1Content" data-toggle="collapse" class = "btn btn-default btn-lg" role="button">HTML &amp; CSS</a>
+      <div id="col1Content" class="collapse">From this you can learn to use HTML &amp; CSS.</div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+      <input type="button" value="Python" class = "btn btn-info" href="#col2Content" data-toggle="collapse">
+      <div id="col2Content" class="collapse">From this you can learn to use Python.</div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+      <button type="button" class = "btn-primary btn-sm" href="#col3Content" data-toggle="collapse">Java</button>
+      <div id="col3Content" class="collapse">From this you can learn to use Java.</div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+      <h4><button href="#col4Content" type="submit" class = "btn btn-danger" role = "button" data-toggle="collapse">Git</button>
+      <div id="col4Content" class="collapse in">From this you can learn to use Git.</div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+      <h4><a href="#col5Content" data-toggle="collapse">SQL</a></h4>
+      <div id="col5Content" class="collapse">From this you can learn to use SQL.</div>
+    </div>
+  </div>
+</div><br>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
