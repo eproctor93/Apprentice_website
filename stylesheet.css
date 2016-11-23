@@ -37,6 +37,14 @@ body {
   background-color: grey;
 }
 
+body.html-css {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  background-color: white;
+}
+
 .demo {
   margin: 0 auto;
   padding-top: 64px;
@@ -138,14 +146,25 @@ body {
 
 .Learning {
   border: solid;
-  border-radius: 3px;
+  border-radius: 9px;
   width: 550px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   background-color: lightgrey;
+  width: 1000px
 }
 
+.Learning2 {
+  border: solid;
+  border-radius: 3px;
+  width: 250px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightgrey;
+  width: 500px
+}
 .Applications {
     border: solid;
     border-radius: 3px;
@@ -157,12 +176,13 @@ body {
 }
 
 .html-css h1 {
-  color: rgb(29, 64, 22);
-  font-size: 50px;
-  background-color: rgb(3, 89, 45);
-  text-shadow: rgb(255, 255, 255) 0px 0px 10px;
-  text-align: center;
-}
+    color: #111; font-family: 'Helvetica Neue', sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center;
+  }
 
 .html-css h2 {
   font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
@@ -176,26 +196,25 @@ body {
  }
 
  .html-css h3 {
-    color: rgb(29, 64, 22);
+   font family
+    color: blue;
     font-size: 50px;
-    background-color: rgb(3, 89, 45);
     text-shadow: rgb(255, 255, 255) 0px 0px 10px;
     text-align: center;
   }
 
   .html-css p {
-    font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
-    font-weight: normal;
-    font-size: .75em;
-    letter-spacing: .1em;
-    line-height: 1.0em;
-    margin:0px;
+    font-sie:18px;
     text-align: center;
-    text-transform: uppercase;
+
+      padding-top: 10px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        padding-left: 30px;
   }
 
   .html-css ul {
-    font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+
     text-align: center;
     margin-left: auto;
     margin-right: auto;
