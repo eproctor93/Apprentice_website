@@ -14,6 +14,7 @@ text-align: center;
  }
 body {
   background-color: grey;
+  font-family: sans-serif;
 }
 
 #picture {
@@ -55,39 +56,6 @@ body.html-css {
   padding-top: 64px;
   max-width: 640px;
   width: 94%;
-}
-
-
-
-.triangle  .info-toggle {
-    color : black;
-    text-decoration: none;
-}
-
-.triangle .info-toggle:before {
-    font-family: 'Glyphicons Halflings';
-    content: "\e072"; /* "play" icon */
-    float: left;
-    color: black;
-    font-size: 18px;
-    line-height: 22px;
-}
-.triangle .info-toggle:not(.collapsed):before {
-    -webkit-transform: rotate(-90deg);
-    -moz-transform:    rotate(-90deg);
-    -ms-transform:     rotate(-90deg);
-    -o-transform:      rotate(-90deg);
-    transform:         rotate(-90deg);
-    margin-right : 5px;
-
-}
-.triangle .info-toggle.collapsed:before {
-    -webkit-transform: rotate(90deg);
-    -moz-transform:    rotate(90deg);
-    -ms-transform:     rotate(90deg);
-    -o-transform:      rotate(90deg);
-    transform:         rotate(90deg);
-    margin-right : 5px;
 }
 
 .demo h1 {
@@ -185,19 +153,30 @@ body.html-css {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  background-color: lightgrey;
+  background-color:	#90EE90;
   width: 1000px
 }
 
 .Learning2 {
   border: solid;
   border-radius: 3px;
-  width: 250px;
+  width: 100px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   background-color: lightgrey;
-  width: 500px
+  width: 200px
+}
+
+.Learning {
+  border: solid;
+  border-radius: 9px;
+  width: 550px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:	#90EE90;
+  width: 1000px
 }
 .Applications {
     border: solid;
@@ -231,8 +210,8 @@ body.html-css {
 
  .html-css h3 {
    font family
-    color: blue;
-    font-size: 50px;
+    color: green;
+    font-size: 80px;
     text-shadow: rgb(255, 255, 255) 0px 0px 10px;
     text-align: center;
   }
@@ -240,16 +219,23 @@ body.html-css {
   .html-css p {
     font-sie:18px;
     text-align: center;
-
-      padding-top: 10px;
-        padding-right: 30px;
-        padding-bottom: 10px;
-        padding-left: 30px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
   }
 
-  .html-css ul {
-
+  .html-css p1 {
+    font-sie:18px;
     text-align: center;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+  }
+  .html-css ul1 {
+
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
     width: 750px;
