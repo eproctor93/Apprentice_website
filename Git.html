@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Coding - Git</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" id="picture" href="Homepage.html"></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="Homepage.html">Home</a></li>
+            <li><a href="PE.html">Personal Experiences</a></li>
+          <li><a href="Links.html">Useful Links</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Coding<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="HTML-CSS.html">HTML-CSS</a></li>
+              <li class="active"><a href="Git.html">Git</a></li>
+              <li><a href="SQL.html">SQL</a></li>
+              <li><a href="Java.html">Java</a></li>
+              <li><a href="Python.html">Python</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><div class="content">
+ </div><br><br>
+ <div class="triangle">
+     <h3><a class="info-toggle collapsed" data-toggle="collapse" href="#collapse" aria-expanded="false">Git Tutorial</a></h3>
+ </div>
+ </div>
+ <div class="collapse" id="collapse" aria-expanded="false">
+ <div class="jumbotron">
+ <div class="gitcommands">
+ <h1>Github setting up a repository tutorial</h1>
+ (Please make sure you have Git bash installed, it will make things easier)
+<br><br>
+ How to make a Repo or to link a repo from github
+<br><br>
+ To start we will make a seperate folder (name of your choice) once done open git bash by right-clicking in the folder you just made and click the Git Bash here and write the following codes
+
+ <br><br><code>
+ $ git init
+ </code><br><br>
+
+ this creates a local repo (not needed if you are cloning from github or any other places)
+
+ or type
+
+ <br><br><code>
+ $ git clone website-link e.g. https://github.com/website/Training.git
+ </code><br><br>
+
+ this will clone a repository from github's master branch to your local folder
+<br>
+<br>
+
+ now we want to make a branch, to do this we will type
+
+ <br><br><code>
+ $ git checkout -b 'insert name'
+ </code><br><br>
+
+ so now the folder will represent that branch
+ <br>
+ <br>
+
+ we will now want to learn how to commit the branch and push it to the website so it knows about the branch
+ to do this type
+
+ <br><br><code>
+ $ git status
+ </code><br><br>
+
+ this shows you all the changes made, to add them to the commit type
+
+ <br><br><code>
+ $ git add .
+ </code><br><br>
+ alternatively you can add a single file by typing
+ <br><br><code>
+ $ git add filename.txt
+ </code><br><br>
+
+ now we will check the status again to see if the modified files show in green (this means they are added)
+
+ <br><br><code>
+ $ git status
+ </code><br><br>
+
+ this is so that we know if it has it added.
+ <br>
+ <br>
+
+ now to commit it type:
+
+
+ <br><br><code>
+ $ git commit -m "Enter a message that represents the changes"
+ </code><br><br>
+
+ now we want to push the file and branch to the website to do this type
+
+ <br><br><code>
+ $ git push --set-upstream origin nameofbranch
+ </code><br><br>
+
+ after the branch is made you will only need use the code below to add files to the branch
+
+ <br><br><code>
+ $ git push
+ </code><br><br>
+
+ now it should have pushed to the website including your new branch
+
+<hr></hr>
+<div class="atlassian">
+ <h4>Useful link for learning Git</h4>
+
+
+  <a href="https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud/git-branch-to-merge" target="_blank">Atlassian</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="video" align="middle">
+<p> A video to expand on what Git is and how it works, this video comes from a website with a tutorial, if you want to use their website to learn use this link
+  <a href="http://gitreal.codeschool.com/levels/1" target="_blank">Git Real </a></p>
+<video width="320" height="240" controls>
+<source src="https://goo.gl/Fj5oAW" type="video/mp4"></video>
+</div>
+<br>
+<br>
+<br>
+<br>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+<footer class="footer">
+  <p>Posted by: <strong>Land Registry IT Apprentices</strong></p>
+</footer>
+</html>

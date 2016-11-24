@@ -253,7 +253,9 @@ Commits it to your local repository, which puts it in a status ready to push.
 
 # Static Site
 
+
 Currently this is the quick setup of the static site, if we need other things added, I will add them, as for now this is the baseline that I have made for it
+
 --------------------------------
 
 ## To use it

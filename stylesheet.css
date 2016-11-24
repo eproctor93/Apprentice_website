@@ -1,11 +1,242 @@
+html {
+height: 100%;
+box-sizing: border-box;
+}
+
+.footer {
+position: absolute;
+right: 0;
+bottom: 0;
+left: 0;
+padding: 1rem;
+background-color: grey;
+text-align: center;
+ }
 body {
+  background-color: grey;
+  font-family: sans-serif;
+}
+
+#picture {
+background: url("http://landregistry.data.gov.uk/app/ukhpi/assets/lr_logo_221_80-93aee0ed58f8ffa03202ad22bb67922901e9b355c799e0ce301dab19dceddd26.png") 105% 40% no-repeat; /* 50% 50% centers image in div */
+background-size:contain;
+padding-left: 100px;
+padding-right: 20px;
+margin-right: 20px;
+}
+
+.title1 {
+  text-align: center;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
   background-color: grey;
 }
 
-h1 {
+body.html-css {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  background-color: white;
+}
+
+.demo {
+  margin: 0 auto;
+  padding-top: 64px;
+  max-width: 640px;
+  width: 94%;
+}
+
+.demo h1 {
+   margin-top: 0;
+ }
+
+.list1 {
+  border: solid;
+  border-radius: 6%;
+  border-color: lightgrey;
+  width: 12%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.atlassian {
+  margin-left: auto;
+  margin-right: auto;
+  width: 550px;
+  background-color: lightgrey;
   text-align: center;
 }
 
-p {
-  text-align: center;
+.gitcommands {
+  background-color: lightgrey;
 }
+
+.jumbotron {
+  background-color: lightgrey;
+}
+
+.title2 {
+  text-align: left;
+  color: lightgray;
+  -webkit-text-stroke: 0.4px black;
+  margin-left: 5%;
+}
+
+.list2 {
+  font-family: sans-serif;
+  color: lightgray;
+  width: 12%;
+  margin-left: 10%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+
+.title3 {
+  text-align: left;
+  margin-left: 2%;
+}
+
+#text3 {
+  margin-left: 3%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.glyphicon {
+  font-size: 13px;
+}
+
+#java {
+  font-size: 18px;
+}
+
+.title4 {
+  text-align: center;
+  font-size: 20px;
+  border: solid;
+  width: 200px;
+  background-color: lightgrey;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list4 {
+  border: solid;
+  border-radius: 6%;
+  border-color: lightgrey;
+  width: 12%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.Learning {
+  border: solid;
+  border-radius: 9px;
+  width: 550px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:	#90EE90;
+  width: 1000px
+}
+
+.Learning2 {
+  border: solid;
+  border-radius: 3px;
+  width: 100px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightgrey;
+  width: 200px
+}
+
+.Learning {
+  border: solid;
+  border-radius: 9px;
+  width: 550px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:	#90EE90;
+  width: 1000px
+}
+.Applications {
+    border: solid;
+    border-radius: 3px;
+    width: 550px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgrey;
+}
+
+.html-css h1 {
+    color: #111; font-family: 'Helvetica Neue', sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center;
+  }
+
+.html-css h2 {
+  font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+  font-weight: normal;
+  font-size: 1.75em;
+  letter-spacing: .2em;
+  line-height: 1.1em;
+  margin:0px;
+  text-align: center;
+  text-transform: uppercase;
+ }
+
+ .html-css h3 {
+   font family
+    color: green;
+    font-size: 80px;
+    text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+    text-align: center;
+  }
+
+  .html-css p {
+    font-sie:18px;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+
+  .html-css p1 {
+    font-sie:18px;
+    text-align: center;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+  }
+  .html-css ul1 {
+
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+  }
