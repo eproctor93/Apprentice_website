@@ -18,6 +18,10 @@ body {
   color: white;
 }
 
+.triangle a{
+  color: black;
+}
+
 #picture {
 background: url("http://landregistry.data.gov.uk/app/ukhpi/assets/lr_logo_221_80-93aee0ed58f8ffa03202ad22bb67922901e9b355c799e0ce301dab19dceddd26.png") 105% 40% no-repeat; /* 50% 50% centers image in div */
 background-size:contain;
