@@ -42,7 +42,7 @@
   </nav><div class="content">
  </div><br><br>
  <div class="triangle">
-     <h3><a class="info-toggle collapsed" data-toggle="collapse" href="#collapse" aria-expanded="false">Git Tutorial</a></h3>
+     <h3><a class="info-toggle collapsed" data-toggle="collapse" href="#collapse" aria-expanded="false"><button type="button" class="btn btn-default btn-block" href="#collapse" data-toggle="collapse">Git Tutorial <span class="glyphicon glyphicon-chevron-down"></span></a></h3></button>
  </div>
  </div>
  <div class="collapse" id="collapse" aria-expanded="false">
@@ -141,11 +141,74 @@
 </div>
 </div>
 </div>
+<div class="git-content">
+<p>If you already have some experience with programming then GitHub is a great way for website hosting.
+  GitHub is a platform to facilitate collaboration among programmers and also offers free hosting for web pages on GitHub Pages.
+  GitHub Pages provides more options (for example, you can use your custom domain), but it requires skills in working with Git.
+
+
+<br>
+<br>
+Cheatsheet:<br>
+
+<!-- Trigger the Modal -->
+<img id="myImg" src="https://s14.postimg.org/b9by8vh81/Git_Cheatsheet.jpg" alt="Git Cheatsheet" width="300" height="200">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+<span class="close" onclick="document.getElementById('myModal').style.display='none'">x</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+Git information:<br>
+
+
+Git is an offset of the command language shell that helps with organising other files/language files, it is a very useful tool to use in a team as it makes it easy to share information with other members of the team or receive information from other members. It isn’t all that user friendly but once you have a handle on the basics it is a bit easier to understand how it works.
+
+<br><br>
+Git has a good amount of similarities however the difference is usually SVN runs as a server where git manages/controls the files in between this image may explain it better:<br><br>
+<img class="svn" src="http://www.syntevo.com/smartgit/img/git-svn.png"></img><br><br>
+
+
+
+<br>
+A web-based tutorial: <a href="https://try.github.io/levels/1/challenges/1">https://try.github.io/levels/1/challenges/1</a></div><hr></hr>
 <div class="video" align="middle">
 <p> A video to expand on what Git is and how it works, this video comes from a website with a tutorial, if you want to use their website to learn use this link
   <a href="http://gitreal.codeschool.com/levels/1" target="_blank">Git Real </a></p>
 <video width="320" height="240" controls>
-<source src="https://goo.gl/Fj5oAW" type="video/mp4"></video>
+<source src="http://projector.codeschool.com/videos/528e63d8.mp4?profile=480p&amp;site=legacy&amp;sso=Bw6M_MQqcfDrVGHJYmJxlw5yreLJ7Wx0xO4N5oZ7maAuCkHkjHsTzBTuklMQk7HpBqxMf1DfEbVpWxwQl54eZnlWHZRnumfeYnLcALoeNmgOa1pa5RjZq2NDgd5gEVPY" type="video/mp4"></video>
 </div>
 <br>
 <br>
