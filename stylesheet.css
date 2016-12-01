@@ -188,38 +188,15 @@ border-color: white;
   padding-bottom: 15px;
 }
 
-.Learning {
-  border: solid;
-  border-radius: 9px;
-  width: 550px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  background-color:	#90EE90;
-  width: 1000px
-}
-
-.Learning2 {
+.Learning2{
   border: solid;
   border-radius: 3px;
   width: 100px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: lightgrey;
+  background-color: #97CD33;
   width: 200px
 }
 
-.Learning {
-  border: solid;
-  border-radius: 9px;
-  width: 550px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  background-color:	#90EE90;
-  width: 1000px
-}
 .Applications {
     border: solid;
     border-radius: 3px;
@@ -247,28 +224,8 @@ border-color: white;
   border-color: white;
 }
 
-.html-css h2 {
-  font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
-  font-weight: normal;
-  font-size: 1.75em;
-  letter-spacing: .2em;
-  line-height: 1.1em;
-  margin:0px;
-  text-align: center;
-  text-transform: uppercase;
- }
-
- .html-css h3 {
-   font family
-    color: green;
-    font-size: 80px;
-    text-shadow: rgb(255, 255, 255) 0px 0px 10px;
-    text-align: center;
-  }
-
   .html-css p {
     font-sie:18px;
-    text-align: center;
     padding-top: 10px;
     padding-right: 30px;
     padding-bottom: 10px;
@@ -282,6 +239,15 @@ border-color: white;
     padding-right: 15px;
     padding-bottom: 0px;
     padding-left: 15px;
+  }
+
+  .html-css p2 {
+    font-size:18px;
+    color: #97CD33;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+    padding-left: 0px;
   }
   /* Style the Image Used to Trigger the Modal */
 #myImg {
