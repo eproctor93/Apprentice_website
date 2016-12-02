@@ -86,19 +86,15 @@ Here is what a function should have:
 A function contains at least 1 argument and 1 parameter, or it can have infinite amount of these. You may not have seen this but print() is a function. This function contains an unlimited amount of arguments.
 A function begins with the keyword def along with the function name and relevant arguments. After declaring a function, you end the first line with a colon (:).  You got to make sure that it is indented.
 You then print the output with the relevant arguments or return it.
+
 Example of printing the output:
 
 ```
 def my_function_with_args(username, greeting):
     print "Hello, %s , From My Function!, I wish you %s"%(username, greeting)
+    
 ```
-Example of returning the output
 
-```
-def sum_two_numbers(a, b):
-    return a + b  
-
-    ```
 
 
 ##Selection
@@ -190,4 +186,5 @@ Here is a basic example of an for loop:
 ```
 for counter in range(5):
       print("hello world")
+
       ```
