@@ -103,7 +103,7 @@ def sum_two_numbers(a, b):
 ##Selection
 Selection in Python is also known as one type of control flow.  Here are a few examples.
 
-### If statement
+## If statement
 The if statement will execute code if the condition is true. For example, if 8 is less than 9, it would print whatever is after that line of code.
 
 ```
@@ -123,7 +123,7 @@ print function_1()
 print function_2()
 
 ```
-### Else Statements
+## Else Statements
 Else statement follows the if statement. This tells the program that if the if statement is not true, then the code after the else statement would execute.
 
 You can do it with multiple functions in the same way as the previous example.
@@ -176,7 +176,7 @@ while password != "secret":
         print("Sorry the value entered in incorrect - try again")
   ```
 
-### For Loops
+## For Loops
 For Loop is used to repeat certain things a number of times. How many times the code should be repeated is indicated in the first line of the for loop.
 
 Here is a basic example of an for loop:
