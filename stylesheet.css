@@ -188,14 +188,6 @@ border-color: white;
   padding-bottom: 15px;
 }
 
-.Learning2{
-  border: solid;
-  border-radius: 3px;
-  width: 100px;
-  text-align: center;
-  background-color: #97CD33;
-  width: 200px
-}
 
 .Applications {
     border: solid;
@@ -241,7 +233,7 @@ border-color: white;
     padding-left: 15px;
   }
 
-  .html-css p2 {
+  .html-css .intro {
     font-size:18px;
     color: #97CD33;
     padding-top: 0px;
