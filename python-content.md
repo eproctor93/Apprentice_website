@@ -41,12 +41,11 @@ Image here:
 
 Whitespace is used in Python to structure code. It is different than languages such as Java or C# where indentation is done by using curly braces { }. In Python it is different.  Once a function is declared, you have to indent the code with four spaces in the first line and another 4 spaces before return. Here is an example:
 
+
 ```
 def spam():
     eggs = 12
     return eggs
-
-print spam()
 
 ```
 -----------------------------------------------------------------------------------------------------------------------------
@@ -92,7 +91,7 @@ Example of printing the output:
 ```
 def my_function_with_args(username, greeting):
     print "Hello, %s , From My Function!, I wish you %s"%(username, greeting)
-    
+
 ```
 
 
