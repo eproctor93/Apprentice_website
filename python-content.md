@@ -48,7 +48,6 @@ def spam():
 
 print spam()
 
-``` 
 
 ## Variables
 If you want to create a web app, they all involve storing and working with different types of data by using variables. Variables stores that particular data and gives it a specific name.
@@ -94,6 +93,7 @@ def my_function_with_args(username, greeting):
 Example of returning the output
 
 ```
+```
 def sum_two_numbers(a, b):
     return a + b  
     ```
@@ -122,6 +122,8 @@ print function_1()
 print function_2()
 
 ```
+-----------------------------------------------------------------------------------------------------------------------------
+
 ## Else Statements
 Else statement follows the if statement. This tells the program that if the if statement is not true, then the code after the else statement would execute.
 
