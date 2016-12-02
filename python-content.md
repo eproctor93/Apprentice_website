@@ -8,6 +8,8 @@
 
 [Variables and DataTypes](#Variables)
 
+[Functions](#Functions)
+
 [Selection](#Selection)
 
 [Iteration](#Iteration)
@@ -63,9 +65,123 @@ This variable called variable now stores the number 5. How you name the variable
 The data types in Python can be grouped into several classes. These are the following:
 
 Int: non-limited length in Python 3
+
 Long: A non-limited length which only exists in Python 2
+
 Float: floating point numbers
+
 Complex: complex numbers
+
 str: String as a sequence of Unicode characters
+
 bytes: Sequence of integers in the range of 0-255 in Python 3.x
+
 dict: Python Dictionaries - element of a list is associated with a definition.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+##Functions
+What happens if you want to keep reusing the same code all over again, but it repeats throughout your code, then it becomes hard for code to read. Functions help solve that and you can reuse code, without writing the same block of code multiple times.
+Here is what a function should have:
+A function contains at least 1 argument and 1 parameter, or it can have infinite amount of these. You may not have seen this but print() is a function. This function contains an unlimited amount of arguments.
+A function begins with the keyword def along with the function name and relevant arguments. After declaring a function, you end the first line with a colon (:).  You got to make sure that it is indented.
+You then print the output with the relevant arguments or return it.
+Example of printing the output:
+
+```
+def my_function_with_args(username, greeting):
+    print "Hello, %s , From My Function!, I wish you %s"%(username, greeting)
+```
+Example of returning the output
+
+```
+def sum_two_numbers(a, b):
+    return a + b  
+    ```
+-----------------------------------------------------------------------------------------------------------------------------
+
+##Selection
+Selection in Python is also known as one type of control flow.  Here are a few examples.
+
+### If statement
+The if statement will execute code if the condition is true. For example, if 8 is less than 9, it would print whatever is after that line of code.
+
+```
+if 8 < 9
+    print "Eight is less than nine!"
+```
+You can also declare it by using functions:
+
+```
+def function_1():
+if 1 < 2:
+    def function_2():
+if 2 < 3:
+     return “Success #2”
+
+print function_1()
+print function_2()
+
+```
+### Else Statements
+Else statement follows the if statement. This tells the program that if the if statement is not true, then the code after the else statement would execute.
+
+You can do it with multiple functions in the same way as the previous example.
+
+``` answer = "'Tis but a scratch!"
+def black_knight():
+    if answer == "'Tis but a scratch!":
+        return True
+    else:         
+        return  False      # Make sure this returns False
+
+def french_soldier():
+    if answer == "Go away, or I shall taunt you a second time!":
+        return True
+    else:          
+        return False       # Make sure this returns False
+
+        ```
+
+### Else if Statements (nested ifs)
+Elif is a short form for else if. It is saying if the first expression is true, it checks to see if the 2nd expression is true and so on and so on.
+In the example below, the elif statement is only checked if the first expression is false.
+
+```
+if 8 > 9:
+    print "I don't get printed!"
+elif 8 < 9:
+    print "I get printed!"
+else:
+    print "I also don't get printed!"
+  ```
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+## Iteration in Python
+If we wanted to do similar things many times, then iteration is a perfect tool to do that. There are many types of things that can happen with iteration. With every loop it has a condition which is an expression that decides whether the loop is going to be executed or not.
+
+### While Loops
+While Loops are known as conditional loop, which means that the loop will keep iterating until the conditions are met. It is indefinite, because there is no guarantee on when the loop will end. Like the if statement, the condition has a boolean expression which is set to either true or false. Once the condition is true, it will keep executing. If the condition is not true, it would stop and it would continue to the code outside of the loop.
+
+
+This is a while loop example:
+```
+password = ""
+while password != "secret":
+    password = input("Please enter the password: ")
+    if password == "secret":
+        print("Thank you. You have entered the correct password")
+    else:
+        print("Sorry the value entered in incorrect - try again")
+  ```
+
+### For Loops
+For Loop is used to repeat certain things a number of times. How many times the code should be repeated is indicated in the first line of the for loop.
+
+Here is a basic example of an for loop:
+
+```
+for counter in range(5):
+      print("hello world")
+      ```
