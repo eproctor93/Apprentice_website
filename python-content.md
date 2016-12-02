@@ -99,7 +99,7 @@ def sum_two_numbers(a, b):
     return a + b  
 
     ```
------------------------------------------------------------------------------------------------------------------------------
+
 
 ##Selection
 Selection in Python is also known as one type of control flow.  Here are a few examples.
@@ -131,7 +131,8 @@ Else statement follows the if statement. This tells the program that if the if s
 
 You can do it with multiple functions in the same way as the previous example.
 
-``` answer = "'Tis but a scratch!"
+```
+answer = "'Tis but a scratch!"
 def black_knight():
     if answer == "'Tis but a scratch!":
         return True
@@ -157,6 +158,7 @@ elif 8 < 9:
     print "I get printed!"
 else:
     print "I also don't get printed!"
+
   ```
 
 -----------------------------------------------------------------------------------------------------------------------------
@@ -170,13 +172,14 @@ While Loops are known as conditional loop, which means that the loop will keep i
 
 This is a while loop example:
 ```
-password = ""
+password = "secret"
 while password != "secret":
     password = input("Please enter the password: ")
     if password == "secret":
-        print("Thank you. You have entered the correct password")
+        print"Thank you. You have entered the correct password")
     else:
         print("Sorry the value entered in incorrect - try again")
+
   ```
 
 ## For Loops
