@@ -143,7 +143,7 @@ def french_soldier():
 
         ```
 
-### Else if Statements (nested ifs)
+## Else if Statements (nested ifs)
 Elif is a short form for else if. It is saying if the first expression is true, it checks to see if the 2nd expression is true and so on and so on.
 In the example below, the elif statement is only checked if the first expression is false.
 
