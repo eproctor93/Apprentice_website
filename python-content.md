@@ -48,8 +48,7 @@ def spam():
 
 print spam()
 
-```
------------------------------------------------------------------------------------------------------------------------------
+``` 
 
 ## Variables
 If you want to create a web app, they all involve storing and working with different types of data by using variables. Variables stores that particular data and gives it a specific name.
