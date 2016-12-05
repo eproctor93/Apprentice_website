@@ -51,66 +51,76 @@
 
 </br>
 
-<h4> Current Page: Variables and Data Types </h4>
+<h4> Current Page: Lists </h4>
 
 
 <a href="Python.html"  class="btn btn-default"> <role type="button"> Introduction to Python</a>
 <a href="pythonbasics.html" class="btn btn-default"> <role type="button"> Basic Programming Constructs</a>
-<a href="pyvariables.html" class="btn btn-success"> <role type="button"> Variables and Data Types</a>
+<a href="pyvariables.html" class="btn btn-default"> <role type="button"> Variables and Data Types</a>
 <a href="pyfunctions.html" class="btn btn-default"> <role type="button"> Functions </a>
 <a href="pyselection.html" class="btn btn-default"> <role type="button"> Selection </a>
 <a href="pyiteration.html" class="btn btn-default"> <role type="button"> Iteration</a>
-<a href="pylists.html" class="btn btn-default"> <role type="button"> Lists </a>
+<a href="pylists.html" class="btn btn-success"> <role type="button"> Lists </a>
 
-<h2> Variables </h2>
-<p> If you want to create a web app, they all involve storing and working with different types of data by using variables. Variables stores that particular data and gives it a specific name. Eg:
+<h2> Lists</h2>
+<p> If you come across a data structure, then arrays is one of the most fundamental ones that you come across in Python. It is not native to Python, but it has more of a general list.  Before you come across arrays, you will definitely come across lists. They are like an ordered collection of items and you can have a list of any data type. </p>
 
-<code> variable = 5 </code>
+<h3>How to create a list </h3>
+<p> To create a list, you start by creating a list variable naming it whatever you want. You define it by adding different values in square brackets, separated by commas. These are a few examples: </p>
 
-This variable called variable now stores the number 5. How you name the variable it doesn’t matter. However it is strongly suggested that you start the first word of your variable in lower case.
-</p>
 
-<h2> Data Types </h2>
-<p>The data types in Python can be grouped into several classes. These are the following: </p>
+<pre><code>
+    prog1 = ["Python", "HTML", "CSS", "Javascript", "Ruby"];
+    prog2 = [1, 2, 3, 4, 5];
+    prog3 = 1995, "Plymouth", 1997, "England", 1999];</code></pre>
+
+<p> List indices always start with an <b>index</b> of 0. So the first item of the list will have an index of <b>0</b> and not <b>1</b>. Next item would have an index of 1 and so on. </p>
+
+<h3> Accessing things from the list </h3>
+<p>If you wanted to access things fron the list, you would say the list name, followed by the index number you wanted to look at. </p>
+
+
+<pre><code>
+  print "prog1[0]:" , prog1[0]  # Prints what is at index 0 in the list prog1. In this case it would print Python, since it is at index 0.
+  print "prog2[1:5]:", list2[1:5] # This prints index 1 all the way to index 4 in prog2. So that would be 2,3,4,5.
+</code></pre>
+
+<h3>Updating and deleting lists </h3>
+<p> You can modify things from the list by using the following items.  </p>
 <table class="table table-bordered">
     <thead>
       <tr>
-        <th>Data Type</th>
-        <th>Meaning</th>
+        <th>Item</th>
+        <th>What does it do?</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>int</td>
-        <td>Non-limited length in Python 3.x</td>
+        <td>append():</td>
+        <td>Adds a new entry to the end of the list </td>
       </tr>
       <tr>
-        <td>Long</td>
-        <td>A non limited length which only exists in Python 2</td>
+        <td>clear():</td>
+        <td>Removes all entries from the list</td>
       </tr>
          <tr>
-        <td>float</td>
-        <td>Floating point numbers</td>
+        <td>copy():</td>
+        <td>Creates a copy of the current list and places it in a new list.</td>
       </tr>
         <tr>
-        <td>complex</td>
-        <td>Complex numbers</td>
+        <td>extend():</td>
+        <td>Adds items from existing list and into the current list.</td>
       </tr>
         <tr>
-        <td>str</td>
-        <td>String as a sequence of Unicode characters</td>
+        <td>insert():</td>
+        <td>Adds a new entry to the position that it is specified in the list. </td>
       </tr>
         <tr>
-        <td>bytes</td>
-        <td>Sequence of integers in the range of 0-255 in Python 3.x</td>
-      </tr>
-        <tr>
-        <td>dict</td>
-        <td>Python Dictionaries - element of a list is associated with a definition. </td>
+        <td>remove():</td>
+        <td>Removes an entry from the list </td>
       </tr>
     </tbody>
   </table>
-
 
  </div><br><br>
 
