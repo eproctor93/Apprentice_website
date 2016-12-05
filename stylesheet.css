@@ -240,6 +240,17 @@ border-color: white;
     padding-bottom: 0px;
     padding-left: 0px;
   }
+
+  /* Styling selected words greeen throughout page */
+  .html-css . highlighted words {
+    font-size:18px;
+    color: #97CD33;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
   /* Style the Image Used to Trigger the Modal */
 #myImg {
     border-radius: 5px;

@@ -50,6 +50,7 @@
   HTML will always represent content, and CSS will always represent the appearance of that content.
 </p>
 
+<img id="myImg" src="https://www.sololearn.com/Uploads/html-css.jpg" alt="Git Cheatsheet" width="300" height="200">
 
 <h3>HTML</h3>
 
@@ -63,13 +64,33 @@
       <li>Browsers do not display the HTML tags, but use them to render the content of the page</li>
     </ul>
 
-    <br>
+<p class = "highlighted words">Getting started with HTML</p>
+  <p>The first thing we should do is set up the skeleton of the page.</p>
+    <ul>
+      <li>a. Always put &lt;!DOCTYPE html&gt; on the first line. This tells the
+        browser what language it's reading (in this case, HTML).</li>
+      <li>b. Always put &lt;html&gt;  on the next line. This starts the HTML document.</li>
+      <li>c. Always put &lt;html&gt; on the last line. This ends the HTML document.</li>
+    </ul>
 
-   <h4>Head</h4>
+<h4>TAGS</h4>
+    <p>Things inside &lt;&gt;s are called tags.
+       Tags nearly always come in pairs: an opening tag and a closing tag eg: &lt;tag&gt; &lt;/tag&gt;
+       Tags also nest, so you should close them in the right order: the most recently opened tag should be the first one closed</p>
+
+<pre><code>
+&lt;first tag&gt;
+  &lt;second tag&gt;
+    Some text!
+  &lt;/second tag&gt;
+&lt;/first tag&gt;
+</code></pre>
+
+<p>There are always two parts to an HTML file: the head and the body.</p>
+
+<h4>HEAD</h4>
    <p>The head contains information about your HTML file, like its title.
      The title is what we see in the browser's title bar or page tab.</p>
-
-
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -80,26 +101,77 @@
 &lt;/html&gt;
 </code></pre>
 
+<h4>PARAGRAPHS</h4>
+    <p>Body is where you put your content, for example text, images and links.
+      The body goes inside the HTML tags and after the closing &lt;head&gt; tag.
+      Paragraphs use the &lt;p&gt; tag and unsure that the tags are always closed.</p>
+
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+    &lt;head&gt;
+      &lt;title&gt;My Webpage&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;Hello world! &lt;/p&gt;
+        &lt;p&gt;Welcome to this webpage&lt;/p&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+</code></pre>
+
+<h4>HEADINGS</h4>
+    <p>HTML actually lets us have more than one heading size. There are six heading sizes,
+      where &lt;h1&gt; is the biggest font size and &lt;h6&gt; is the smallest.</p>
+
+<pre><code>
+      &lt;h1&gt; - Heading 1
+        &lt;h2&gt; - Heading 2
+          &lt;h3&gt; - Heading 3
+          &lt;h4&gt; - Heading 4
+        &lt;h5&gt; - Heading 5
+      &lt;h6&gt; - Heading 6
+</code></pre>
+
+<h4>LINKS<h4>
+
+<br>
+
+<h4>LISTS</h4>
 
 
 
-     <h3>CSS</h3>
-     <br>
 
-       <ul>
+
+
+
+
+
+
+
+________________________________
+<h3>CSS</h3>
+
+  <ul>
        <li>CSS stands for Cascading Style Sheets</li>
        <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
        <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
        <li>External stylesheets are stored in CSS files</li>
-      </ul>
+  </ul>
+
+      <p>The HTML link element links a CSS file to an HTML
+        file so that CSS styling can be applied. Here’s an example of the link
+        element:  &lt;link rel="stylesheet" type="text/css" href="main.css"/&gt;</p>
 
       <br>
+
+
 
 <pre><code>
 h1 {
  color: blue;
 }
-   </code></pre>
+</code></pre>
 
 
 </div>
