@@ -64,7 +64,7 @@
       <li>Browsers do not display the HTML tags, but use them to render the content of the page</li>
     </ul>
 
-<p class = "highlighted words">Getting started with HTML</p>
+<p class = "highlightedwords">Getting started with HTML</p>
   <p>The first thing we should do is set up the skeleton of the page.</p>
     <ul>
       <li>a. Always put &lt;!DOCTYPE html&gt; on the first line. This tells the
@@ -138,6 +138,55 @@
 <br>
 
 <h4>LISTS</h4>
+    <p>HTML supports two kinds of lists: Ordered lists and Unordered lists. Within lists
+      each individual list item has its own tag  &lt;li&gt;.</p>
+
+<p class = "highlightedwords">Ordered Lists</p>
+    <p>Ordered lists' items are denoted with numbers.</p>
+
+<pre><code>
+  &lt;ol&gt;
+      &lt;li&gt;First item!&lt;/li&gt;
+      &lt;li&gt;Second item!&lt;/li&gt;
+      &lt;li&gt;Last item!&lt;/li&gt;
+  &lt;/ol&gt;
+</code></pre>
+
+<p class = "highlightedwords">Unordered Lists</p>
+    <p>Unordered lists are just lists whose items are denoted with bullet points. This type of lists
+      is when the order doesn’t matter.</p>
+
+<pre><code>
+  &lt;ul&gt;
+      &lt;li&gt;Computer&lt;/li&gt;
+      &lt;li&gt;Printer&lt;/li&gt;
+      &lt;li&gt;Laptop&lt;/li&gt;
+      &lt;li&gt;Mouse&lt;/li&gt;
+  &lt;/ul&gt;
+</code></pre>
+
+<h4>DIVS</h4>
+    <p>Div elements divide your page by enclosing other elements.
+       The enclosed groups of elements can be organised, moved and styled independently from one another.
+       Div elements are often used with the class attribute.</p>
+
+<pre><code>
+  &lt;!DOCTYPE html&gt;
+       &lt;html&gt;
+       	    &lt;head&gt;
+       		    &lt;title&gt;Result&lt;/title&gt;
+       	    &lt;/head&gt;
+      	   &lt;body&gt;
+       		      &lt;div style="width:50px; height:50px; background-color:red"&gt;&lt;/div&gt;
+       		      &lt;div style="width:50px; height:50px; background-color:blue"&gt;&lt;/div&gt;
+       		      &lt;div style="width:50px; height:50px; background-color:green"&gt;&lt;/div&gt;
+       		      &lt;div style="width:50px; height:50px; background-color:yellow"&gt;&lt;/div&gt;
+       		      &lt;a href="http://www.bbc.co.uk"&gt;&lt;div&gt;&lt;/div&gt;&lt;/a&gt;
+       	  &lt;/body&gt;
+       &lt;/html&gt;
+</code></pre>
+
+<h4>IMAGES?</h4>
 
 
 
@@ -149,7 +198,9 @@
 
 
 
-________________________________
+
+
+____________________________________________________________________________________________________________
 <h3>CSS</h3>
 
   <ul>
@@ -159,19 +210,53 @@ ________________________________
        <li>External stylesheets are stored in CSS files</li>
   </ul>
 
-      <p>The HTML link element links a CSS file to an HTML
+<p>The HTML link element links a CSS file to an HTML
         file so that CSS styling can be applied. Here’s an example of the link
-        element:  &lt;link rel="stylesheet" type="text/css" href="main.css"/&gt;</p>
+        element:<br>
+        <p class = "highlightedwords">&lt;link rel="stylesheet" type="text/css" href="main.css"/&gt;</p>
 
-      <br>
+<p>About the link:
+        The link element uses three attributes:<br>
+        -rel: specifies the relationships between the current file and the file being linked to: in this case, the rel attribute is “stylesheet.”<br>
+        -type: Specifies the type of linked to.<br>
+        -href: Provides the URL of the file being linked to.
+        Like the HTML image element, link is self-closing. It does not need a closing tag.<br>
+        In the example above, main.css is an external style sheet. Using external stylesheets is one of the most popular ways to write CSS. Inline CSS is another method.</p>
 
-
+    <ol>
+        <li>Rule: A list of CSS instruction for how to style a specific HTML element or group of HTML elements.</li>
+        <li>Selector: Specifies exactly which HTML elements to style. Here h1 is the selector.</li>
+        <li>Properties and values: Located inside the { } brackets, properties and values specify what aspect of the selector to style.
+          In the example, the color property Is set to blue, which will display all h1 elements in blue.</li>
+    </ol>
 
 <pre><code>
 h1 {
  color: blue;
 }
 </code></pre>
+
+<br>
+
+<h4>CSS SYNTAX</h4>
+
+    <img id="myImg" src="http://www.w3schools.com/css/selector.gif" alt="Git Cheatsheet" width="600" height="200">
+
+    <p>Selectors are used in CSS to select the parts of the HTML that are being styled.
+    You can use several different methods for selecting an element. Properties are defined
+    within selectors by defining a property and a value. They are separated with a colon
+    and delineated with a semicolon and declaration blocks are surrounded by curly braces.
+    Each declaration includes a CSS property name and a value. <br>
+    <b>The importance of semicolons</b><br>
+    As you start adding more and more property-value pairs for each CSS selector,
+    it's important remember to put a semicolon (;) at the end of each line.
+    The semicolon tells CSS that one property-value pair is over and it's time to
+    move on to the next one. Without semicolons, it'll become confused and your page won't look right.</p>
+
+
+
+
+
 
 
 </div>
