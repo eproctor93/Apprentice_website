@@ -11,7 +11,7 @@ left: 0;
 padding: 1rem;
 text-align: center;
  }
-body {
+body, p, .table {
   background: url("http://i.stack.imgur.com/IehB7.png") 105% 40%;
   font-family: sans-serif;
   color: white;
@@ -27,6 +27,11 @@ background-size:contain;
 padding-left: 100px;
 padding-right: 20px;
 margin-right: 20px;
+}
+
+h3 {
+  font-family: sans-serif;
+  color: white;
 }
 
 .rowhome{
@@ -156,6 +161,7 @@ border-color: white;
   margin-left: 3%;
   padding-top: 15px;
   padding-bottom: 15px;
+  color: black;
 }
 
 .glyphicon {
