@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coding - HTML + CSS</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body class = html-css>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" id="picture" href="Homepage.html"></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="Homepage.html">Home</a></li>
+            <li><a href="PE.html">Personal Experiences</a></li>
+          <li><a href="Links.html">Useful Links</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Coding<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="active"><a href="html_css_page_INTRO.html">HTML-CSS</a></li>
+              <li><a href="Git.html">Git</a></li>
+              <li><a href="SQL.html">SQL</a></li>
+              <li><a href="Java.html">Java</a></li>
+              <li><a href="Python.html">Python</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><div class="content">
+<div class="html-css">
+  <br>
+  <br>
+<h2 class="title1">HTML CONTENT</h2>
+
+  <a href="html_css_page_INTRO.html"  class="btn btn-success"> <role type="button"> Introduction to HTML</a>
+  <a href="html_css_page_html_content.html"  class="btn btn-success"> <role type="button"> HTML content</a>
+  <a href="html_css_page_css_content.html"  class="btn btn-success"> <role type="button"> CSS content</a>
+
+<br>
+<br>
+    <p class = "highlightedwords">Getting started with HTML</p>
+
+      <p>The first thing we should do is set up the skeleton of the page.</p>
+        <ul>
+          <li>a. Always put &lt;!DOCTYPE html&gt; on the first line. This tells the
+            browser what language it's reading (in this case, HTML).</li>
+          <li>b. Always put &lt;html&gt;  on the next line. This starts the HTML document.</li>
+          <li>c. Always put &lt;html&gt; on the last line. This ends the HTML document.</li>
+        </ul>
+
+    <h4>TAGS</h4>
+        <p>Things inside &lt;&gt;s are called tags.
+           Tags nearly always come in pairs: an opening tag and a closing tag eg: &lt;tag&gt; &lt;/tag&gt;
+           Tags also nest, so you should close them in the right order: the most recently opened tag should be the first one closed</p>
+
+    <pre><code>
+    &lt;first tag&gt;
+      &lt;second tag&gt;
+        Some text!
+      &lt;/second tag&gt;
+    &lt;/first tag&gt;
+    </code></pre>
+
+    <p>There are always two parts to an HTML file: the head and the body.</p>
+
+    <h4>HEAD</h4>
+       <p>The head contains information about your HTML file, like its title.
+         The title is what we see in the browser's title bar or page tab.</p>
+
+    <pre><code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;title&gt; My webpage! &lt;/title&gt;
+      &lt;/head&gt;
+    &lt;/html&gt;
+    </code></pre>
+
+    <h4>PARAGRAPHS</h4>
+        <p>Body is where you put your content, for example text, images and links.
+          The body goes inside the HTML tags and after the closing &lt;head&gt; tag.
+          Paragraphs use the &lt;p&gt; tag and unsure that the tags are always closed.</p>
+
+
+    <pre><code>
+    &lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+        &lt;head&gt;
+          &lt;title&gt;My Webpage&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p&gt;Hello world! &lt;/p&gt;
+            &lt;p&gt;Welcome to this webpage&lt;/p&gt;
+        &lt;/body&gt;
+      &lt;/html&gt;
+    </code></pre>
+
+    <h4>HEADINGS</h4>
+        <p>HTML actually lets us have more than one heading size. There are six heading sizes,
+          where &lt;h1&gt; is the biggest font size and &lt;h6&gt; is the smallest.</p>
+
+    <pre><code>
+          &lt;h1&gt; - Heading 1
+            &lt;h2&gt; - Heading 2
+              &lt;h3&gt; - Heading 3
+              &lt;h4&gt; - Heading 4
+            &lt;h5&gt; - Heading 5
+          &lt;h6&gt; - Heading 6
+    </code></pre>
+
+    <h4>LINKS<h4>
+
+    <br>
+
+    <h4>LISTS</h4>
+        <p>HTML supports two kinds of lists: Ordered lists and Unordered lists. Within lists
+          each individual list item has its own tag  &lt;li&gt;.</p>
+
+    <p class = "highlightedwords">Ordered Lists</p>
+        <p>Ordered lists' items are denoted with numbers.</p>
+
+    <pre><code>
+      &lt;ol&gt;
+          &lt;li&gt;First item!&lt;/li&gt;
+          &lt;li&gt;Second item!&lt;/li&gt;
+          &lt;li&gt;Last item!&lt;/li&gt;
+      &lt;/ol&gt;
+    </code></pre>
+
+    <p class = "highlightedwords">Unordered Lists</p>
+        <p>Unordered lists are just lists whose items are denoted with bullet points. This type of lists
+          is when the order doesn’t matter.</p>
+
+    <pre><code>
+      &lt;ul&gt;
+          &lt;li&gt;Computer&lt;/li&gt;
+          &lt;li&gt;Printer&lt;/li&gt;
+          &lt;li&gt;Laptop&lt;/li&gt;
+          &lt;li&gt;Mouse&lt;/li&gt;
+      &lt;/ul&gt;
+    </code></pre>
+
+    <h4>DIVS</h4>
+        <p>Div elements divide your page by enclosing other elements.
+           The enclosed groups of elements can be organised, moved and styled independently from one another.
+           Div elements are often used with the class attribute.</p>
+
+    <pre><code>
+      &lt;!DOCTYPE html&gt;
+           &lt;html&gt;
+           	    &lt;head&gt;
+           		    &lt;title&gt;Result&lt;/title&gt;
+           	    &lt;/head&gt;
+          	   &lt;body&gt;
+           		      &lt;div style="width:50px; height:50px; background-color:red"&gt;&lt;/div&gt;
+           		      &lt;div style="width:50px; height:50px; background-color:blue"&gt;&lt;/div&gt;
+           		      &lt;div style="width:50px; height:50px; background-color:green"&gt;&lt;/div&gt;
+           		      &lt;div style="width:50px; height:50px; background-color:yellow"&gt;&lt;/div&gt;
+           		      &lt;a href="http://www.bbc.co.uk"&gt;&lt;div&gt;&lt;/div&gt;&lt;/a&gt;
+           	  &lt;/body&gt;
+           &lt;/html&gt;
+    </code></pre>
+
+
+    <h4>HYPERLINKS</h4>
+         <p>Hyperlinks, or simply a link, is a reference to data that the reader can directly follow either by clicking,
+            tapping, or hovering. A hyperlink points to a whole document or to a specific element within a document.
+            Hypertext is text with hyperlinks. The text that is linked is called anchor text.</p>
+    <br>
+            You use hyperlinks, or links for short!.
+    <br>
+    <br>
+            &lt;a href="https://www.codecademy.com"&gt;My Favorite Site!&lt;/a&gt;<br>
+
+    <pre><code>
+            <a href="https://www.codecademy.com">My Favorite Site!</a>
+    </pre></code>
+
+    <br>
+         <p>First, there’s an opening &lt;a&gt; tag and that tag has an attribute called href. The href value tells your link where you want it to go. In this case – https://www.codeacademy.com
+            Then you have a description of your link between your opening &lt;a&gt; and your closing &lt;/a&gt; tags. This is what you will be able to click on.
+            Finally, you have your closing &lt;/a&gt; tag.</p>
+
+    <h4>IMAGES</h4>
+         <p>To add images, the image tag needs to be used, &lt;img&gt;. This tag is a bit different from the others.
+            Instead of putting the content between the tags, you tell the tag where to get the picture using src.
+            It’s also different because there is no ending tag. It has / in the tag to close it. <img src=”url...”/>
+    <br>
+            Every image on the web has its own image URL. Simply right click on an image and choose “Copy image URL.”
+            Paste that URL in quotes after src= to insert with your &lt;img&gt; tag.
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<footer class="footer">
+  <p>Posted by: <strong>Land Registry IT Apprentices</strong></p>
+</footer>
+</body>
+</html>

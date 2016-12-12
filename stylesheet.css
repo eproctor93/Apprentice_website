@@ -17,6 +17,10 @@ body, p, .table {
   color: white;
 }
 
+h3,{
+  font-family: sans-serif;
+  color: white;
+}
 .triangle a{
   color: black;
 }
@@ -215,6 +219,15 @@ border-color: white;
     text-align: center;
   }
 
+  .html-css h6 {
+      color: #97CD33; font-family: 'Helvetica Neue', sans-serif;
+      background-color: grey;
+      font-size: 30px;
+      letter-spacing: -1px;
+      line-height: 1;
+      text-align: left;
+    }
+
 .svn{
   background-color: lightgrey;
   border: solid;
@@ -249,6 +262,7 @@ border-color: white;
 
   /* Styling selected words greeen throughout page */
   .html-css .highlightedwords {
+    background-color: grey;
     font-size:18px;
     color: #97CD33;
     padding-top: 0px;
