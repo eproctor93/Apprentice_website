@@ -7,5 +7,9 @@ app.config['DEBUG'] = True
 def hello_world():
     return 'Hello, World!'
 
+@app.route('/example')
+def example():
+    return render_template('example.html')
+
 if __name__ == "__main__":
     app.run()
