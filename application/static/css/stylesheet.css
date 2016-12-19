@@ -1,4 +1,4 @@
-/* Main body of text (on all pages) */
+/* Main body of text (on all pages) *START* */
 html {
 height: 100%;
 box-sizing: border-box;
@@ -32,11 +32,7 @@ padding: 1rem;
 text-align: center;
  }
 
-/* Main body of text (on all pages) */
-
-.triangle a{
-  color: black;
-}
+/* Main body of text (on all pages) *END* */
 
 #picture {
 background: url("http://landregistry.data.gov.uk/app/ukhpi/assets/lr_logo_221_80-93aee0ed58f8ffa03202ad22bb67922901e9b355c799e0ce301dab19dceddd26.png") 105% 40% no-repeat; /* 50% 50% centers image in div */
@@ -48,6 +44,12 @@ margin-right: 20px;
 
 .rowhome{
   width: 600px;
+}
+
+.svn{
+  background-color: lightgrey;
+  border: solid;
+  border-color: white;
 }
 
 .gittut{
@@ -217,12 +219,6 @@ border-color: white;
       text-align: left;
     }
 
-.svn{
-  background-color: lightgrey;
-  border: solid;
-  border-color: white;
-}
-
   .html-css p {
     font-sie:18px;
     padding-top: 10px;
@@ -249,6 +245,17 @@ border-color: white;
     padding-left: 0px;
   }
 
+    .html-css ul1 {
+
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto;
+      width: 750px;
+    }
+
+
+
+/* This is for enlarging pictures  *START* */
   /* Styling selected words greeen throughout page */
   .html-css .highlightedwords {
     background-color: grey;
@@ -347,10 +354,4 @@ border-color: white;
     }
 }
 
-  .html-css ul1 {
-
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    width: 750px;
-  }
+/* This is for enlarging pictures  *END* */
