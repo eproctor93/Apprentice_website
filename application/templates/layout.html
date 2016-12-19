@@ -19,21 +19,21 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" id="picture" href="Homepage.html"></a>
+          <a class="navbar-brand" id="picture" href="{{ url_for('homepage') }}"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="Homepage.html">Home</a></li>
-              <li><a href="PE.html">Personal Experiences</a></li>
-            <li><a href="Links.html">Useful Links</a></li>
+            <li><a href="{{ url_for('homepage') }}">Home</a></li>
+              <li><a href="{{ url_for('personalexperiences') }}">Personal Experiences</a></li>
+            <li><a href="{{ url_for('links') }}">Useful Links</a></li>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Coding<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="html_css_page_INTRO.html">HTML-CSS</a></li>
-                <li><a href="Git.html">Git</a></li>
-                <li><a href="SQL.html">SQL</a></li>
-                <li><a href="Java.html">Java</a></li>
-                <li><a href="Python.html">Python</a></li>
+                <li><a href="{{ url_for('html') }}">HTML-CSS</a></li>
+                <li><a href="{{ url_for('git') }}">Git</a></li>
+                <li><a href="{{ url_for('SQL') }}">SQL</a></li>
+                <li><a href="{{ url_for('java') }}">Java</a></li>
+                <li><a href="{{ url_for('python') }}">Python</a></li>
               </ul>
             </li>
           </ul>

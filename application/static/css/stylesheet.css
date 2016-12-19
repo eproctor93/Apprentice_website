@@ -12,6 +12,12 @@ body {
   background: url("http://i.stack.imgur.com/IehB7.png") 105% 40%;
 }
 
+.content{
+  margin-top:50px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
 .text {
   font-family: sans-serif;
   color: white;
@@ -25,6 +31,7 @@ left: 0;
 padding: 1rem;
 text-align: center;
  }
+
 /* Main body of text (on all pages) */
 
 .triangle a{
@@ -51,14 +58,10 @@ margin-right: 20px;
   margin-left: 2%;
 }
 
-.title1 {
+.header1 {
   text-align: center;
-}
-
-.content{
-  margin-top:50px;
-  margin-left: 2%;
-  margin-right: 2%;
+  color: white;
+  font-family: sans-serif;
 }
 
 *,
@@ -66,9 +69,6 @@ margin-right: 20px;
 *:after {
   box-sizing: inherit;
 }
-
-
-
 
 .demo {
   margin: 0 auto;

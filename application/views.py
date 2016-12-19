@@ -15,5 +15,33 @@ def example():
 def homepage():
     return render_template('Homepage.html')
 
+@app.route('/Python')
+def python():
+    return render_template('Python.html')
+
+@app.route('/SQL')
+def SQL():
+    return render_template('SQL.html')
+
+@app.route('/HTML')
+def html():
+    return render_template('html_css_page_INTRO.html')
+
+@app.route('/Git')
+def git():
+    return render_template('Git.html')
+
+@app.route('/Java')
+def java():
+    return render_template('Java.html')
+
+@app.route('/Personal-Experiences')
+def personalexperiences():
+    return render_template('PE.html')
+
+@app.route('/Links')
+def links():
+    return render_template('Links.html')
+
 if __name__ == "__main__":
     app.run()
