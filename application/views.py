@@ -27,6 +27,14 @@ def SQL():
 def html():
     return render_template('html_css_page_INTRO.html')
 
+@app.route('/HTML-Content')
+def htmlcontent():
+    return render_template('html_css_page_html_content.html')
+
+@app.route('/HTML-CSS')
+def htmlcss():
+    return render_template('html_css_page_css_content.html')
+
 @app.route('/Git')
 def git():
     return render_template('Git.html')

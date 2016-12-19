@@ -1,58 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Personal Experiences</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
-<body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" id="picture" href="Homepage.html"></a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="Homepage.html">Home</a></li>
-            <li class="active"><a href="PE.html">Personal Experiences</a></li>
-          <li><a href="Links.html">Useful Links</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Coding<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li class="active"><a href="html_css_page_INTRO.html">HTML-CSS</a></li>
-              <li><a href="Git.html">Git</a></li>
-              <li><a href="SQL.html">SQL</a></li>
-              <li><a href="Java.html">Java</a></li>
-              <li><a href="Python.html">Python</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav><div class="content">
+{% extends "layout.html" %}
+{% block body %}
+<div class="content">
  </div><br><br>
 
 
 
 
 
-<script
-  src="https://code.jquery.com/jquery-3.1.1.js"
-  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-  crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
-<footer class="footer">
-  <p>Posted by: <strong>Land Registry IT Apprentices</strong></p>
-</footer>
+{% endblock %}
 </html>

@@ -1,44 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Coding - HTML + CSS</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
-<body class = html-css>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" id="picture" href="Homepage.html"></a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="Homepage.html">Home</a></li>
-            <li><a href="PE.html">Personal Experiences</a></li>
-          <li><a href="Links.html">Useful Links</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Coding<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li class="active"><a href="html_css_page_INTRO.html">HTML-CSS</a></li>
-              <li><a href="Git.html">Git</a></li>
-              <li><a href="SQL.html">SQL</a></li>
-              <li><a href="Java.html">Java</a></li>
-              <li><a href="Python.html">Python</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav><div class="content">
+{% extends "layout.html" %}
+{% block body %}
+<div class="content">
 <div class="html-css">
   <br>
   <br>
@@ -51,9 +13,9 @@
   HTML will always represent content, and CSS will always represent the appearance of that content.
   </p>
 
-<a href="html_css_page_INTRO.html"  class="btn btn-success"> <role type="button"> Introduction to HTML</a>
-<a href="html_css_page_html_content.html"  class="btn btn-success"> <role type="button"> HTML content</a>
-<a href="html_css_page_css_content.html"  class="btn btn-success"> <role type="button"> CSS content</a>
+  <a href="{{ url_for('html') }}"  class="btn btn-success"> <role type="button"> Introduction to HTML</a>
+  <a href="{{ url_for('htmlcontent') }}"  class="btn btn-success"> <role type="button"> HTML content</a>
+  <a href="{{ url_for('htmlcss') }}"  class="btn btn-success"> <role type="button"> CSS content</a>
 
 <br>
 <br>
