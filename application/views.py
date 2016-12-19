@@ -7,8 +7,8 @@ app.config['DEBUG'] = True
 def hello_world():
     return 'Hello, World!'
 
-@app.route('/example')
-def example():
+@app.route('/layout')
+def layout():
     return render_template('layout.html')
 
 @app.route('/Homepage')
