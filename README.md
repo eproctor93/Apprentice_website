@@ -1,5 +1,14 @@
 # Apprentice-Website
 
+## To run Flask
+
+```
+pip install -r requirements.txt
+python run.py
+```
+
+Then navigate to 'localhost:5000'
+
 [Anna's commands](#anna)
 
 [Luke's commands](#luke)
