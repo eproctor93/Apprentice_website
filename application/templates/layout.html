@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -22,7 +23,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="Homepage.html">Home</a></li>
+            <li><a href="Homepage.html">Home</a></li>
               <li><a href="PE.html">Personal Experiences</a></li>
             <li><a href="Links.html">Useful Links</a></li>
             <li class="dropdown">
@@ -39,11 +40,15 @@
         </div>
       </div>
     </nav>
-  {% block body %}{% endblock %}
+    {% block body %}{% endblock %}</body>
   {% block footer %}
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <footer class="footer">
     <p>Posted by: <strong>Land Registry IT Apprentices</strong></p>
   </footer>
   {% endblock %}
-  </body>
 </html>

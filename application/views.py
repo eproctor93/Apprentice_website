@@ -9,7 +9,11 @@ def hello_world():
 
 @app.route('/example')
 def example():
-    return render_template('example.html')
+    return render_template('layout.html')
+
+@app.route('/Homepage')
+def homepage():
+    return render_template('Homepage.html')
 
 if __name__ == "__main__":
     app.run()

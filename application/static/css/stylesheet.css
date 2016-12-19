@@ -1,6 +1,20 @@
+/* Main body of text (on all pages) */
 html {
 height: 100%;
 box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  background: url("http://i.stack.imgur.com/IehB7.png") 105% 40%;
+}
+
+.text {
+  font-family: sans-serif;
+  color: white;
 }
 
 .footer {
@@ -11,6 +25,7 @@ left: 0;
 padding: 1rem;
 text-align: center;
  }
+/* Main body of text (on all pages) */
 
 .triangle a{
   color: black;
@@ -52,17 +67,9 @@ margin-right: 20px;
   box-sizing: inherit;
 }
 
-body {
-  position: relative;
-  margin: 0;
-  padding-bottom: 6rem;
-  min-height: 100%;
-  background: url("http://i.stack.imgur.com/IehB7.png") 105% 40%;
-  font-family: sans-serif;
-  color: white;
-}
 
-gi
+
+
 .demo {
   margin: 0 auto;
   padding-top: 64px;
