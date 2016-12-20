@@ -47,7 +47,7 @@ margin-right: 20px;
 
 /* Main body of text (on all pages) *END* */
 
-/* Headers/Titles here, edit for individual tiles in different area *START* */
+/* Headers/Titles here, edit for individual tiles in different area, each header is for each size *START* */
 .header1 {
   text-align: center;
   color: white;
@@ -83,7 +83,7 @@ margin-right: 20px;
   color: white;
   font-family: sans-serif;
 }
-/* Headers/Titles here, edit for individual tiles in different area *END* */
+/* Headers/Titles here, edit for individual tiles in different area, each header is for each size *END* */
 
 
 .rowhome{
