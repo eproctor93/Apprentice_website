@@ -23,6 +23,7 @@ body {
   color: white;
   margin-right: 2%;
   margin-left: 2%;
+  font-size: 12px;
 }
 
 .footer {
@@ -34,8 +35,7 @@ padding: 1rem;
 text-align: center;
  }
 
-/* Main body of text (on all pages) *END* */
-
+ /* this is in the navbar */
 #picture {
 background: url("http://landregistry.data.gov.uk/app/ukhpi/assets/lr_logo_221_80-93aee0ed58f8ffa03202ad22bb67922901e9b355c799e0ce301dab19dceddd26.png") 105% 40% no-repeat; /* 50% 50% centers image in div */
 background-size:contain;
@@ -43,6 +43,48 @@ padding-left: 100px;
 padding-right: 20px;
 margin-right: 20px;
 }
+ /* this is in the navbar */
+
+/* Main body of text (on all pages) *END* */
+
+/* Headers/Titles here, edit for individual tiles in different area *START* */
+.header1 {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+}
+
+.header2 {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+}
+
+.header3 {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+}
+
+.header4 {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+}
+
+.header5 {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+}
+
+.header6 {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+}
+/* Headers/Titles here, edit for individual tiles in different area *END* */
+
 
 .rowhome{
   width: 600px;
@@ -60,12 +102,6 @@ margin-right: 20px;
 
 .gitcommands{
   margin-left: 2%;
-}
-
-.header1 {
-  text-align: center;
-  color: white;
-  font-family: sans-serif;
 }
 
 *,
@@ -258,6 +294,7 @@ border-color: white;
 
 
 /* This is for enlarging pictures  *START* */
+
   /* Styling selected words greeen throughout page */
   .html-css .highlightedwords {
     background-color: grey;
