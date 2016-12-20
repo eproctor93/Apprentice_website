@@ -21,6 +21,8 @@ body {
 .text {
   font-family: sans-serif;
   color: white;
+  margin-right: 2%;
+  margin-left: 2%;
 }
 
 .footer {
