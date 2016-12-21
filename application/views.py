@@ -8,11 +8,11 @@ def layout():
 
 @app.route('/')
 def homepage():
-    return render_template('Homepage.html')
+    return render_template('Homepage.html', title="Home")
 
 @app.route('/Python')
 def python():
-    return render_template('Python.html')
+    return render_template('Python.html', title="Python Page")
 
 @app.route('/python/pythonbasics')
 def pythonbasics():
@@ -40,7 +40,7 @@ def pylists():
 
 @app.route('/SQL')
 def SQL():
-    return render_template('SQL.html')
+    return render_template('SQL.html', title="SQL Page")
 
 @app.route('/SQL/sqlSyntax')
 def sqlSyntax():
@@ -69,7 +69,7 @@ def sqlRelations():
 @app.route('/HTML')
 def html():
     title='HTML & CSS Introduction'
-    return render_template('HTML-CSS.html', pagetitle=title)
+    return render_template('HTML-CSS.html', pagetitle='HTML-CSS')
 
 @app.route('/Git')
 def git():
@@ -77,15 +77,15 @@ def git():
 
 @app.route('/Java')
 def java():
-     return render_template('Java.html')
+    return render_template('Java.html', title="Java Page")
 
 @app.route('/Personal-Experiences')
 def personalexperiences():
-    return render_template('PE.html')
+    return render_template('PE.html', title="Personal-Experiences Page")
 
 @app.route('/Links')
 def links():
-    return render_template('Links.html')
+    return render_template('Links.html', title="Useful Links Page")
 
 if __name__ == "__main__":
     app.run()
