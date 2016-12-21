@@ -21,15 +21,18 @@ def SQL():
 
 @app.route('/HTML')
 def html():
-    return render_template('html_css_page_INTRO.html')
+    title='HTML & CSS Introduction'
+    return render_template('html_iNTRO.html', pagetitle=title)
 
 @app.route('/HTML-Content')
 def htmlcontent():
-    return render_template('html_css_page_html_content.html')
+    title='HTML CONTENT'
+    return render_template('html_html_content.html', pagetitle=title)
 
-@app.route('/HTML-CSS')
-def htmlcss():
-    return render_template('html_css_page_css_content.html')
+@app.route('/CSS-Content')
+def csscontent():
+    title= 'CSS CONTENT'
+    return render_template('html_css_content.html', pagetitle=title)
 
 @app.route('/Git')
 def git():
