@@ -8,7 +8,7 @@ def layout():
 
 @app.route('/')
 def homepage():
-    return render_template('Homepage.html', title="Home")
+    return render_template('Homepage.html', title="Homepage")
 
 @app.route('/Python')
 def python():
@@ -68,7 +68,6 @@ def sqlRelations():
 
 @app.route('/HTML')
 def html():
-    title='HTML & CSS Introduction'
     return render_template('HTML-CSS.html', pagetitle='HTML-CSS')
 
 @app.route('/Git')
@@ -81,7 +80,7 @@ def java():
 
 @app.route('/Personal-Experiences')
 def personalexperiences():
-    return render_template('PE.html', title="Personal-Experiences")
+    return render_template('PE.html', title="Personal Experiences")
 
 @app.route('/Links')
 def links():
