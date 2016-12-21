@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/layout')
 def layout():
-    return render_template('layout.html')
+    return render_template('layout.html', title="Layout")
 
 @app.route('/')
 def homepage():
@@ -12,7 +12,7 @@ def homepage():
 
 @app.route('/Python')
 def python():
-    return render_template('Python.html', title="Python Page")
+    return render_template('Python.html', title="Python")
 
 @app.route('/python/pythonbasics')
 def pythonbasics():
@@ -40,7 +40,7 @@ def pylists():
 
 @app.route('/SQL')
 def SQL():
-    return render_template('SQL.html', title="SQL Page")
+    return render_template('SQL.html', title="SQL")
 
 @app.route('/SQL/sqlSyntax')
 def sqlSyntax():
@@ -77,15 +77,15 @@ def git():
 
 @app.route('/Java')
 def java():
-    return render_template('Java.html', title="Java Page")
+    return render_template('Java.html', title="Java")
 
 @app.route('/Personal-Experiences')
 def personalexperiences():
-    return render_template('PE.html', title="Personal-Experiences Page")
+    return render_template('PE.html', title="Personal-Experiences")
 
 @app.route('/Links')
 def links():
-    return render_template('Links.html', title="Useful Links Page")
+    return render_template('Links.html', title="Useful Links")
 
 if __name__ == "__main__":
     app.run()
