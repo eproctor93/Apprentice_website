@@ -1,13 +1,6 @@
 {% extends "layout.html" %}
 {% block body %}
-<div class="content">
-<div class="html-css">
-  <br>
-  <br>
 
-<a href="{{ url_for('html') }}"  class="btn btn-success"> <role type="button"> Introduction to HTML</a>
-<a href="{{ url_for('htmlcontent') }}"  class="btn btn-success"> <role type="button"> HTML content</a>
-<a href="{{ url_for('csscontent') }}"  class="btn btn-success"> <role type="button"> CSS content</a>
 
     <p class="text">The HTML link element links a CSS file to an HTML
             file so that CSS styling can be applied. Here’s an example of the link
@@ -154,16 +147,6 @@
     </pre></code>
 
 
-    <div class="triangle">
-       <h3 class="header3"><a class="info-toggle collapsed" data-toggle="collapse" href="#collapse" aria-expanded="false">
-           <button type="button" class="btn btn-default btn-block" href="#collapse" data-toggle="collapse">
-               CSS basics
-               <span class="glyphicon glyphicon-chevron-down"></span></a></h3></button>
-    </div>
-
-    <div class="collapse" id="collapse" aria-expanded="false">
-    <div class="jumbotron">
-    <div class="gitcommands">
       <h2  class="header2" style="text-align: center;">CSS basics</h2>
       <br>
         <h5 class="header5" style="font-size: 16px;">Font-Family</h5> <br>
@@ -204,13 +187,6 @@
            For example, if a parent element has font-size: 20px; child elements with font-size:
            1em; would be quivalent to 20px. Child elements with font-size: 0.5em; would be equivalent to 10px (a halving and so on. <br>
            We will primarily explore px and rem values since these are the most commonly used today.</p>
-    </div>
-    </div>
-    </div>
-
-
-
-
 
 
 
@@ -221,4 +197,3 @@
 {% endblock %}
 </body>
 </html>
-</div>

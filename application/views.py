@@ -22,12 +22,8 @@ def SQL():
 @app.route('/HTML')
 def html():
     title='HTML & CSS Introduction'
-    return render_template('html_iNTRO.html', pagetitle=title)
+    return render_template('html_INTRO.html', pagetitle=title)
 
-@app.route('/HTML-Content')
-def htmlcontent():
-    title='HTML CONTENT'
-    return render_template('html_html_content.html', pagetitle=title)
 
 @app.route('/CSS-Content')
 def csscontent():
@@ -36,11 +32,12 @@ def csscontent():
 
 @app.route('/Git')
 def git():
-    return render_template('Git.html')
+
+    return render_template('Git.html', pagetitle='Git Contenth')
 
 @app.route('/Java')
 def java():
-    return render_template('Java.html')
+     return render_template('Java.html')
 
 @app.route('/Personal-Experiences')
 def personalexperiences():
