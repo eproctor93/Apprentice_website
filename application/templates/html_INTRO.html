@@ -339,10 +339,10 @@
               In the example, the color property Is set to blue, which will display all h1 elements in blue.</li>
         </ol>
 
-        <div class="col-md-6">
-        <pre><code>h1 {
-            color: blue;
-            }</code></pre>
+<div class="col-md-6">
+<pre><code>h1 {
+color: blue;
+}</code></pre>
 
         </div>
 
@@ -432,78 +432,92 @@
     </div>
     </div>
 
-<h4 class="header4">The ID Selector</h4>
+    <h4 class="header4">The ID Selector</h4>
 
-<div class="row">
-<div class="col-md-6">
-<p class="text">The id selector uses the id attribute of an HTML element to select a specific element.
-The id of an element should be unique within a page, so the id selector is used to select one unique element!
-To select an element with a specific id, write a hash (#) character, followed by the id of the element.
-The style rule below will be applied to the HTML element with id="para1.In this case, all html &lt;para1&gt;
-elements will have the text-align center, color red.(NOTE An id selector cannot start with a number!)</p>
+    <div class="row">
+    <div class="col-md-6">
 
-</div>
+    <p class="text">The id selector uses the id attribute of an HTML element to select a specific element.
+        The id of an element should be unique within a page, so the id selector is used to select one unique element!
+        To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+        The style rule below will be applied to the HTML element with id=para1.
+        {{ html_important("In this case, all css #para1 elements will be the color red and aligned in the center.(NOTE An id selector cannot start with a number!)") }}</p>
 
-<div class="col-md-6">
-<pre><code>#para1 {
-text-align: center;
-color: red;
-}</pre></code>
+    </div>
 
-</div>
-</div>
+    <div class="col-md-6">
+        <pre><code>#para1 {
+        text-align: center;
+        color: red;
+        }</code></pre>
 
-
-
-
-
-
-
-        
+    </div>
+    </div>
 
     <h4 class="header4">The class Selector</h4>
-        <p class="text">The class selector selects elements with a specific class attribute.
-            To select elements with a specific class, write a period (.) character, followed by the name of the class.</p>
 
-    <pre><code>
-        .center {
-        	text-align: center;
-        	color: red;
-        }
-    </pre></code>
-        <p class="text">In this case, all html elements with class="center" will be red and center-aligned.</p>
+    <div class="row">
+    <div class="col-md-6">
 
+    <p class="text">The class selector selects elements with a specific class attribute.
+        To select elements with a specific class, write a period (.) character, followed by the name of the class.
+        {{ html_important("In this case, all css elements with class of .center will be the color red and aligned in the center.") }}</p>
+
+    </div>
+
+
+    <div class="col-md-6">
+        <pre><code>.center {
+        text-align: center;
+        color: red;
+        }</code></pre>
+
+    </div>
+    </div>
 
     <h4 class="header4">Grouping Selectors</h4>
+
+    <div class="row">
+    <div class="col-md-6">
+
     <p class="text">If you have elements with the same style definitions, like this:</p>
 
-    <pre><code>
-        h1 {
-        	text-align: center;
-        	color: red;
+    </div>
+
+    <div class="col-md-6">
+        <pre><code>h1 {
+        text-align: center;
+        color: red;
         }
         h2 {
-        	text-align: center;
-        	color: red;
+        text-align: center;
+        color: red;
         }
         p {
         text-align: center;
-        	color: red;
-        }
-    </pre></code>
-        <p class="text">It will be better to group the selectors, to minimize the code.
+        color: red;
+        }</code></pre>
+
+    </div>
+        
+    <div class="col-md-6">
+
+    <p class="text">It will be better to group the selectors, to minimize the code.
         To group selectors, separate each selector with a comma.<br>
-        In the example below selectors from the code above are grouped to minimize the code</p>
+        {{ html_important("In this case, all css elements (h1, h2 and p) will be red and center-aligned.") }}</p>
 
-    <pre><code>
-        .h1, h2, p {
-        	text-align: center;
-        	color: red;
-        }
-    </pre></code>
+    </div>
 
-    <div class="content">
-    </div><br><br>
+
+    <div class="col-md-6">
+        <pre><code>.h1, h2, p {
+        text-align: center;
+        color: red;
+        }</pre></code>
+
+    </div>
+    </div>
+
         <div class="triangle">
  <h3><a class="info-toggle collapsed" data-toggle="collapse" href="#collapse" aria-expanded="false"><button type="button" class="btn btn-default btn-block" href="#collapse" data-toggle="collapse">Git Tutorial <span class="glyphicon glyphicon-chevron-down"></span></a></h3></button>
         </div>
