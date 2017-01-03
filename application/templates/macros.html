@@ -12,7 +12,9 @@
 
 
 {% macro list(listline) %}
-      <li class="text">{{listline}}</li>
+<li class="text">{{listline}}</li>
 {% endmacro %}
 
-
+{% macro html_important(message) %}
+<p class="important">{{message}}</p>
+{% endmacro %}

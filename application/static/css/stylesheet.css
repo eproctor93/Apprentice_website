@@ -55,6 +55,15 @@ color:black!important;
   font-size: 14px;
 }
 
+.text_central {
+ font-family: 'Noto Serif', serif;
+  color: grey!important;
+  margin-right: 2%;
+  margin-left: 2%;
+  font-size: 16px;
+  text-align: center;
+}
+
 .footer {
 right: 0;
 bottom: 0;
@@ -97,7 +106,7 @@ margin-right: 20px;
 .header4 {
   text-align: left;
   color: black;
-  font-family: sans-serif;
+  font-family: 'Noto Serif', serif;
 }
 
 .header5 {
@@ -282,7 +291,6 @@ border-color: white;
     padding-top: 10px;
     padding-right: 30px;
     padding-bottom: 10px;
-    padding-left: 30px;
   }
 
   .html-css p1 {
@@ -293,6 +301,8 @@ border-color: white;
     padding-bottom: 0px;
     padding-left: 15px;
   }
+
+
 
   .html-css .intro {
     font-size:18px;
@@ -315,10 +325,11 @@ border-color: white;
 
 /* This is for enlarging pictures  *START* */
 
- /* Styling selected words greeen throughout page */
-  .html-css .highlightedwords {
-    font-size:18px;
-    color: #97CD33;
+ /* Styling selected words green throughout page */
+  .html-css .important {
+    font-size:12px;
+    font-family:'Noto Serif', serif;
+    color: green;
     padding-top: 0px;
     padding-right: 15px;
     padding-bottom: 0px;
@@ -405,10 +416,14 @@ border-color: white;
     cursor: pointer;
 }
 
+
 hr{
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
 }
 
 /* 100% Image Width on Smaller Screens */
