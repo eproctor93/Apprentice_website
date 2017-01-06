@@ -4,32 +4,23 @@
 <div class="html-css">
   <br>
   <br>
-
 <hr>
-
     <p class="text_central"><b>HTML</b> and <b>CSS</b> are two of the core technologies for building Web pages. HTML describes the
   structure of a web page while CSS defines the visual appearance.<br>
   It is usually better to write HTML and CSS in separate files. Separating structure and style has many advantages.
   HTML will always represent content, and CSS will always represent the appearance of that content.
     </p>
-
-
    <ul class="nav nav-pills" >
     <li class="active"><a data-toggle="pill" href="#INTRO">Introduction</a></li>
     <li><a data-toggle="pill" href="#HTML">HTML Content</a></li>
     <li><a data-toggle="pill" href="#CSS">CSS Content</a></li>
   </ul>
-
-
-
   <div class="tab-content">
     <div id="INTRO" class="tab-pane fade in active">
           {{ html('Introduction')  }}
 <!-- introooo -->
 <img id="myImg" src="https://www.sololearn.com/Uploads/html-css.jpg" alt="Git Cheatsheet" width="300" height="200">
-
 {{ content('HTML')}}
-
 <br>
     <ul>
         {{ list('HTML stands for Hyper Text Markup Language') }}
@@ -39,36 +30,17 @@
         {{ list('HTML tags label pieces of content such as "heading", "paragraph", "table", and so on...') }}
         {{ list('Browsers do not display the HTML tags, but use them to render the content of the page') }}
     </ul>
-
-
 <h4 class="header4">CSS</h4>
-
     <ul>
       {{ list('CSS stands for Cascading Style Sheets') }}
       {{ list('CSS describes how HTML elements are to be displayed on screen, paper, or in other media') }}
       {{ list('CSS saves a lot of work. It can control the layout of multiple web pages all at once') }}
       {{ list('External stylesheets are stored in CSS files') }}
     </ul>
-
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
     <div id="HTML" class="tab-pane fade">
  {{ html('HTML CONTENT')  }}<!-- html!! -->
-
-
     <h5>Getting started with HTML</h5>
-
     <p class="text">The first thing we should do is set up the skeleton of the page.</p>
         <ul>
           <li class="text">Always put &lt;!DOCTYPE html&gt; on the first line as this tells the
@@ -76,42 +48,31 @@
           <li class="text">To start the HTML document always put &lt;html&gt;  on the next line.</li>
           <li class="text">To end the HTML document always put &lt;html&gt; on the last line.</li>
         </ul>
-
 <hr>
-
       <h4 class="header4">TAGS</h4>
       <div class="row">
         <div class="col-md-6">
-
         <p class="text">Things inside &lt;&gt;s are called tags.<br>
            Tags nearly always come in pairs: an opening tag and a closing tag <br>eg: &lt;tag&gt; &lt;/tag&gt;<br>
            Tags also nest, so you should close them in the right order: the most recently opened tag
           should be the first one closed.</p>
         </div>
-
         <div class="col-md-6">
            <pre><code>&lt;first tag&gt;
     &lt;second tag&gt;
         Some text!
     &lt;/second tag&gt;
 &lt;/first tag&gt;</code></pre>
-
       </div>
     </div>
-
-
     <p class="text"><b>There are always two parts to an HTML file: the HEAD and the BODY</b></p>
-
-
     <h4 class="header4">HEAD</h4>
       <div class="row">
         <div class="col-md-6">
-
        <p class="text">The &lt;head&gt; contains information about your HTML file, like its title.
          The title is what we see in the browser's title bar or page tab. <br>
          {{ html_important("Make sure to close the tag using the / within the end tag.") }}
            </div>
-
         <div class="col-md-6">
           <pre><code>&lt;!DOCTYPE html&gt;
       &lt;html&gt;
@@ -119,11 +80,8 @@
             &lt;title&gt; My webpage! &lt;/title&gt;
         &lt;/head&gt;
       &lt;/html&gt;</code></pre>
-
-
       </div>
     </div>
-
      <h4 class="header4">BODY</h4>
       <div class="row">
         <div class="col-md-6">
@@ -133,7 +91,6 @@
           {{ html_important("Make sure to close the tag using the / within the end tag.") }}
         </p>
           </div>
-
     <div class="col-md-6">
           <pre><code>&lt;!DOCTYPE html&gt;
         &lt;html&gt;
@@ -144,12 +101,8 @@
                  The content of the document...
             &lt;/body&gt;
         &lt;/html&gt;</code></pre>
-
       </div>
         </div>
-
-
-
         <h4 class="header4">PARAGRAPHS</h4>
         <div class="row">
             <div class="col-md-6">
@@ -157,7 +110,6 @@
                     Paragraphs use the &lt;p&gt; tag and go inside the body tag.<br>
                     {{ html_important("Make sure to close the tag using the / within the end tag.") }}
             </div>
-
   <div class="col-md-6">
     <pre><code>&lt;!DOCTYPE html&gt;
         &lt;html&gt;
@@ -169,22 +121,17 @@
                  &lt;p&gt;Welcome to this webpage&lt;/p&gt;
              &lt;/body&gt;
         &lt;/html&gt;</code></pre>
-
     </div>
         </div>
-
     <h4 class="header4">HEADINGS</h4>
        <div class="row">
         <div class="col-md-6">
-
         <p class="text">HTML actually lets us have more than one heading size.
           There are six heading sizes, starting from &lt;h1&gt; and finishing on &lt;h6&gt;.
             {{ html_important("Make sure to close the tag using the / within the end tag.") }}
           <br>
         </p>
           </div>
-
-
          <div class="col-md-6">
     <pre><code><h1>&lt;h1&gt;</h1>
 <h2>&lt;h2&gt;</h2>
@@ -194,20 +141,15 @@
 <h6>&lt;h6&gt;</h6></code></pre>
   </div>
          </div>
-
-
     <br>
-
     <h4 class="header4">LISTS</h4>
            <div class="row">
         <div class="col-md-6">
         <p class="text">HTML supports two kinds of lists: Ordered lists and Unordered lists. Within lists
           each individual list item has its own tag  &lt;li&gt;.</p>
-
     <p><b>Ordered Lists</b></p>
         <p class="text">Ordered lists items are denoted with numbers.</p>
           </div>
-
          <br>
              <div class="col-md-6">
     <pre><code><ol>&lt;ol&gt;
@@ -217,7 +159,6 @@
 &lt;/ol&gt;</ol></code></pre>
                </div>
              </div>
-
     <p><b>Unordered Lists</b></p>
       <div class="row">
        <div class="col-md-6">
@@ -225,7 +166,6 @@
           is when the order doesn’t matter.
             {{ html_important("Make sure to close the tag using the / within the end tag.") }}</p>
       </div>
-
 <div class="col-md-6">
     <pre><code><ul>&lt;ul&gt;
         <li>&lt;li&gt;Computer&lt;/li&gt;</li>
@@ -233,10 +173,8 @@
         <li>&lt;li&gt;Laptop&lt;/li&gt;</li>
         <li>&lt;li&gt;Mouse&lt;/li&gt;</li>
 &lt;/ul&gt;</ul></code></pre>
-
   </div>
     </div>
-
      <h4 class="header4">DIVS</h4>
           <div class="row">
         <div class="col-md-6">
@@ -260,9 +198,6 @@
     &lt;/html&gt;</code></pre>
             </div>
         </div>
-
-
-
     <h4 class="header4">HYPERLINKS</h4>
            <div class="row">
         <div class="col-md-6">
@@ -275,13 +210,10 @@
             Finally, you have your closing &lt;/a&gt; tag. The first line in the example shows the what the code would look like and the second line (in blue) allows the user to access the link.</p>
           </div>
  <div class="col-md-6">
-
     <pre><code>&lt;a href="https://www.codecademy.com"&gt;My Favorite Site!&lt;/a&gt;<br>
 <a href="https://www.codecademy.com">My Favorite Site!</a></code></pre>
-
             </div>
           </div>
-
     <h4 class="header4">IMAGES</h4>
            <div class="row">
         <div class="col-md-6">
@@ -291,39 +223,23 @@
            <p class="text">Every image on the web has its own image URL. Simply right click on an image and choose “Copy image URL.”
                 Paste that URL in quotes after src= to insert with your &lt;img&gt; tag.</p>
    </div>
-
              <div class="col-md-6">
-
       <pre><code>&lt;a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/organisation/logo/69/LR_logo_265.png"/a&gt;&lt;/img&gt;
-
           <img src="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/organisation/logo/69/LR_logo_265.png" class = "float-xs-right"
                       alt="css_Logo" width="350" height="200"><br></code></pre>
-
                </div>
                </div>
       <b class="text">HTML Glossary Helpsheet</b> <a href="https://www.codecademy.com/articles/glossary-html">
       <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" class = "float-xs-right" alt="css_Logo" width="100" height="100">
     </a>
       </div>
-
-
-
-
-
-
-
     <div id="CSS" class="tab-pane fade">
        {{ html('CSS CONTENT')  }}
-
-
 <!-- CSSSSSS -->
-
-
     <p class="text">The HTML link element links a CSS file to an HTML
             file so that CSS styling can be applied. Here’s an example of the link
             element:<br>
             <p> &lt;link rel="stylesheet" type="text/css" href="main.css"/&gt</p>
-
     <p class="text">About the link:
             The link element uses three attributes:<br>
             -rel: specifies the relationships between the current file and the file being linked to: in this case, the rel attribute is “stylesheet.”<br>
@@ -331,23 +247,17 @@
             -href: Provides the URL of the file being linked to.
             Like the HTML image element, link is self-closing. It does not need a closing tag.<br>
             In the example above, main.css is an external style sheet. Using external stylesheets is one of the most popular ways to write CSS. Inline CSS is another method.</p>
-
         <ol>
             <li class="text">Rule: A list of CSS instruction for how to style a specific HTML element or group of HTML elements.</li>
             <li class="text">Selector: Specifies exactly which HTML elements to style. Here h1 is the selector.</li>
             <li class="text">Properties and values: Located inside the { } brackets, properties and values specify what aspect of the selector to style.
               In the example, the color property Is set to blue, which will display all h1 elements in blue.</li>
         </ol>
-
 <div class="col-md-6">
 <pre><code>h1 {
 color: blue;
 }</code></pre>
-
         </div>
-
-
-
         <br>
                 <br>
                 <br>
@@ -355,13 +265,9 @@ color: blue;
                 <br>
                 <br>
                 <br>
-
-
     <h4  class="header4">CSS SYNTAX</h4>
                 <br>
-
         <img id="myImg" src="http://www.w3schools.com/css/selector.gif" alt="Git Cheatsheet" width="400" height="150">
-
         <p class="text">Selectors are used in CSS to select the parts of the HTML that are being styled.
         You can use several different methods for selecting an element. Properties are defined
         within selectors by defining a property and a value. They are separated with a colon
@@ -372,118 +278,83 @@ color: blue;
         it's important remember to put a semicolon (;) at the end of each line.
         The semicolon tells CSS that one property-value pair is over and it's time to
         move on to the next one. Without semicolons, it'll become confused and your page won't look right.</p>
-
-
     <h4 class="header4">Syntax general example:</h4>
-
     <div class="row">
     <div class="col-md-6">
     <p class="text">selector { property: value; }<br>In this case, all html &lt;h1&gt; elements will be colored blue,
         with font-size 12px.</p>
     </div>
-
     <div class="col-md-6">
         <pre><code>h1 {
         color: blue;
         font-size: 12px;
         }</code></pre>
-
     </div>
     </div>
-
-
     <h4 class="header4">The element Selector</h4>
-
     <div class="row">
     <div class="col-md-6">
     <p class="text">CSS selectors are used to "find" (or select) HTML elements based on their element name,
         id, class, attribute, and more.<br>In this case, all html &lt;p&gt; elements will be center-aligned,
         with a red text color.</p>
     </div>
-
     <div class="col-md-6">
         <pre><code>p {
         text-align: center;
         color: red;
         }</code></pre>
-
     </div>
     </div>
-
-
     <h4 class="header4">Type Selectors</h4>
-
     <div class="row">
     <div class="col-md-6">
-
     <p class="text">The type selector targets all elements with a specific HTML tag. If we wanted to address all h1 elements,
         as an example, this would look like the following. In HTML it will look like &lt;h1&gt;...&lt;/h1&gt;<br>In this case, all html
         &lt;h1&gt; elements will be colored blue, font-family verdana, font-size 300%</p>
-
     </div>
-
     <div class="col-md-6">
         <pre><code>h1 {
         color: blue;
         font-family: verdana;
         font-size: 300%;
         }</code></pre>
-
     </div>
     </div>
-
     <h4 class="header4">The ID Selector</h4>
-
     <div class="row">
     <div class="col-md-6">
-
     <p class="text">The id selector uses the id attribute of an HTML element to select a specific element.
         The id of an element should be unique within a page, so the id selector is used to select one unique element!
         To select an element with a specific id, write a hash (#) character, followed by the id of the element.
         The style rule below will be applied to the HTML element with id=para1.
         {{ html_important("In this case, all css #para1 elements will be the color red and aligned in the center.(NOTE An id selector cannot start with a number!)") }}</p>
-
     </div>
-
     <div class="col-md-6">
         <pre><code>#para1 {
         text-align: center;
         color: red;
         }</code></pre>
-
     </div>
     </div>
-
     <h4 class="header4">The class Selector</h4>
-
     <div class="row">
     <div class="col-md-6">
-
     <p class="text">The class selector selects elements with a specific class attribute.
         To select elements with a specific class, write a period (.) character, followed by the name of the class.
         {{ html_important("In this case, all css elements with class of .center will be the color red and aligned in the center.") }}</p>
-
     </div>
-
-
     <div class="col-md-6">
         <pre><code>.center {
         text-align: center;
         color: red;
         }</code></pre>
-
     </div>
     </div>
-
     <h4 class="header4">Grouping Selectors</h4>
-
     <div class="row">
     <div class="col-md-6">
-
     <p class="text">If you have elements with the same style definitions, like this:</p>
-
     </div>
-
     <div class="col-md-6">
         <pre><code>h1 {
         text-align: center;
@@ -497,35 +368,26 @@ color: blue;
         text-align: center;
         color: red;
         }</code></pre>
-
     </div>
-        
-    <div class="col-md-6">
 
+    <div class="col-md-6">
     <p class="text">It will be better to group the selectors, to minimize the code.
         To group selectors, separate each selector with a comma.<br>
         {{ html_important("In this case, all css elements (h1, h2 and p) will be red and center-aligned.") }}</p>
-
     </div>
-
-
     <div class="col-md-6">
         <pre><code>.h1, h2, p {
         text-align: center;
         color: red;
         }</pre></code>
-
     </div>
     </div>
-
         <div class="triangle">
  <h3><a class="info-toggle collapsed" data-toggle="collapse" href="#collapse" aria-expanded="false"><button type="button" class="btn btn-default btn-block" href="#collapse" data-toggle="collapse">Git Tutorial <span class="glyphicon glyphicon-chevron-down"></span></a></h3></button>
         </div>
     </div>
     <div class="collapse" id="collapse" aria-expanded="false">
     <div class="jumbotron">
-
-
   <h2  class="header2" style="text-align: center;">CSS basics</h2>
   <br>
     <h5 class="header5" style="font-size: 16px;">Font-Family</h5> <br>
@@ -537,7 +399,6 @@ color: blue;
            browser does not support the first font. Sometimes, more than one fallback font is included.</p>
 <br>
 <br>
-
 <h5 class="header5" style="font-size: 16px;">Colour</h5> <br>
        <p class="text" style="font-size: 14px;">Black is not your only option when it comes to font color. In CSS, the color
        property sets the color of a CSS selector’s font. <br>
@@ -567,17 +428,13 @@ color: blue;
        1em; would be quivalent to 20px. Child elements with font-size: 0.5em; would be equivalent to 10px (a halving and so on. <br>
        We will primarily explore px and rem values since these are the most commonly used today.</p>
 </div>
-
-
 <b class="text">CSS Glossary Helpsheet</b> <a href="https://www.codecademy.com/articles/glossary-css">
       <img src="http://wpguru.co.uk/wp-content/uploads/2013/09/CSS-Logo-214x300.png" class = "float-xs-right" alt="css_Logo" width="100" height="100">
     </a>
        </div>
-
 </div>
 </div>
   </div>
-
 {% endblock %}
 </body>
 </html>

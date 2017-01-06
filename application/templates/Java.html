@@ -1,7 +1,314 @@
 {% extends "layout.html" %}
+{% from "macros.html" import html, content, list, numbered_list, html_important with context %}
 {% block body %}
+<div class="html-css">
+  <br>
+  <br>
+
+
+    <p class="text"><b>Java</b> is an object oriented programming language made not just for games but general
+     purpose programming as well. Java - not to be confused with JavaScript. You may have noticed java popping up
+     on your computer asking for updates or to install it when trying to play a game on a browser or games similar to
+     “Minecraft” where it uses the language to run its own executable file.<br>
+    </p>
+
+
+    <ul class="nav nav-pills" >
+        <li class="active"><a data-toggle="pill" href="#INTRO">Introduction</a></li>
+        <li><a data-toggle="pill" href="#Java">Java Basics</a></li>
+        <li><a data-toggle="pill" href="#statments">Control Flow Statements</a></li>
+    </ul>
+
+  <div class="tab-content">
+    <div id="INTRO" class="tab-pane fade in active">
+          {{ html('Introduction To Java')  }}
+<!-- introooo -->
+<img  src="http://www.pragnosismechsoft.com/images/java.jpg" alt="Git Cheatsheet" width="300" height="200" style="margin-left:35%">
+
+
+     <p class ="text">Java is a general purpose, high-level programming language developed by Sun Microsystems.
+     A small team of engineers, known as the Green Team, initiated the language in 1991. Java was originally
+     called OAK, and was designed for handheld devices and set-top boxes. Oak was unsuccessful, so in 1995
+     Sun changed the name to Java and modified the language to take advantage of the burgeoning World Wide
+     Web.</p>
 <br>
-<div class="content">
+    <p class="text">There were five primary goals in the creation of the Java language:</p>
+    <ol>
+     {{ numbered_list('It must be "simple, object-oriented, and familiar".') }}
+     {{ numbered_list('It must be "robust and secure".') }}
+     {{ numbered_list('It must be "architecture-neutral and portable".') }}
+     {{ numbered_list('It must execute with "high performance".') }}
+     {{ numbered_list('It must be "interpreted, threaded, and dynamic".') }}
+    </ol>
+        <br/>
+       <div style="width:100%;text-align:center"><img src="http://www.codingdojo.com/blog/wp-content/uploads/Programming-Languages-for-2016_graph.jpg"></div>
+    </div>
+
+
+
+
+
+
+    <div id="Java" class="tab-pane fade">
+ {{ html('Java Basics')  }}
+
+    <br>
+    <p class="text">Getting started with Java:</p>
+
+    <p class="text">The first thing we should do is set up the skeleton of the page using methods and classes</p>
+
+      <hr>
+
+      <h4 class="header4">Methods and Classes</h4>
+      <div class="row">
+        <div class="col-md-6">
+
+        <p class="text">Things inside &lt;&gt;s are called tags.<br>
+           Tags nearly always come in pairs: an opening tag and a closing tag <br>eg: &lt;tag&gt; &lt;/tag&gt;<br>
+           Tags also nest, so you should close them in the right order: the most recently opened tag
+          should be the first one closed.</p>
+        </div>
+
+        <div class="col-md-6">
+           <pre><code>public class HelloWorld {
+   public static void main(String[] args) {
+      System.out.println("Hello, World");
+   }
+}
+</code></pre>
+
+      </div>
+    </div>
+   {{ html_important('In order to compile you must end a statement with a semi-colon (;)') }}
+   </br>
+
+    <h4 class="header4">Operators</h4>
+      <div class="row">
+        <div class="col-md-6">
+       <b style="color:black">The Arithmetic Operators</b>
+        </div>
+          </div>
+       <div class="row">
+       <div class="col-md-6">
+Arithmetic operators are used in mathematical expressions in the same way that they are used in algebra.
+        The following table lists the arithmetic operators.
+        </div>
+              <div class="col-md-6">
+<!-- table -->
+
+        </div>
+    </div>
+    </br>
+          <div class="row">
+        <div class="col-md-6">
+       <b style="color:black">The Relational Operators</b>
+        </div>
+          </div>
+
+                <div class="row">
+       <div class="col-md-6">
+There are following relational operators supported by Java language.
+
+        </div>
+              <div class="col-md-6">
+
+        </div>
+    </div>
+
+
+     <h4 class="header4">Data Types</h4>
+      <div class="row">
+        <div class="col-md-6">
+        <p class="text">The &lt;body&gt; tag defines the document's body. The &lt;body&gt; element contains all the
+          contents of an HTML document, such as text (using the &lt;p&gt; tag), hyperlinks, images, tables, lists, etc.
+          The body goes inside the HTML tags and after the closing &lt;head&gt; tag.<br>
+          Make sure to close the tag using the / within the end tag.
+        </p>
+          </div>
+
+    <div class="col-md-6">
+          <pre><code>&lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+            &lt;head&gt;
+                 &lt;title&gt; My webpage! &lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                The content of the document...
+            &lt;/body&gt;
+        &lt;/html&gt;</code></pre>
+
+      </div>
+        </div>
+
+
+
+    <h4 class="header4">Variables</h4>
+      <div class="row">
+        <div class="col-md-6">
+        <p class="text">
+          Paragraphs use the &lt;p&gt; tag and go inside the body tag.<br>
+          Make sure to close the tag using the / within the end tag.</p>
+          </div>
+
+  <div class="col-md-6">
+    <pre><code>&lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+            &lt;head&gt;
+                 &lt;title&gt; My Webpage! &lt;/title&gt;
+             &lt;/head&gt;
+             &lt;body&gt;
+                 &lt;p&gt; Hello world! &lt;/p&gt;
+                 &lt;p&gt; Welcome to this webpage &lt;/p&gt;
+             &lt;/body&gt;
+        &lt;/html&gt;</code></pre>
+
+    </div>
+        </div>
+
+      </div>
+
+
+    <div id="statments" class="tab-pane fade">
+       {{ html('Control Flow Statements')  }}
+
+
+     <p class="text">Control flow statements break up the flow of execution by employing decision making loops and if statments to conditionally
+     execute particular blocks of code. I will discuss the following types of statements:</p>
+
+        <ol>
+         {{ numbered_list('If statements')}}
+         {{ numbered_list('Else If statements')}}
+         {{ numbered_list('For loops')}}
+         {{ numbered_list('While loops')}}
+         {{ numbered_list('Do...while loops')}}
+               </ol>
+
+
+           <hr>
+    <h4 class="header4">If statements:</h4>
+
+    <div class="row">
+    <div class="col-md-6">
+    <p class="text">The Structure of IF statements in Java are shown in the example:<br/>An if statement
+     can be followed by an optional else statement, which executes when the Boolean expressions is false.
+        </p>
+    </div>
+
+    <div class="col-md-6">
+        <pre>
+         int age = 35;
+         int checkage = 30;
+         if(age > checkage){
+             System.out.println("You can't drive");
+         }
+        </pre>
+
+    </div>
+    </div>
+
+
+    <h4 class="header4">The if...else if...else statement:</h4>
+
+    <div class="row">
+    <div class="col-md-6">
+    <p class="text">When using if, else if, else statements there are a few points to keep in mind. <br/>An if can
+     have zero or one else's and it must come after any else if's. An if can have zero to many else if's and
+     they must come before the else. Once an else if succeeds, none of the remaining else if's or else's will
+     be tested. </p>
+    </div>
+
+    <div class="col-md-6">
+        <pre><code> int age = 21;
+	  int checkage = 30;
+	  if(age > checkage){
+		  System.out.println("You can't drive");
+	  }
+	  else if(age == checkage){
+		  System.out.println("You can't vote");
+	  }
+	  else {
+            System.out.println("your age is:" + age+ " so you can't do either");
+	  }
+</code></pre>
+
+    </div>
+    </div>
+
+
+    <h4 class="header4">For loop</h4>
+
+    <div class="row">
+    <div class="col-md-6">
+
+    <p class="text">A loop statement allows us to execute a statement or group of statements multiple times.A for
+        loop is useful when you know how many times a task is to be repeated, as it is a repetition control structure
+        that allows you to efficiently write a loop that needs to be executed a specific number of times.
+     <br/></p>
+
+    </div>
+    <div class="col-md-6">
+        <pre><code>for(int number=2;number<=8;number++){
+		System.out.println(number);
+		}</code></pre>
+
+    </div>
+    </div>
+
+<h4 class="header4">While loops</h4>
+
+<div class="row">
+<div class="col-md-6">
+ <p class="text">The key point of the while loop is that the loop might not ever run. When the expression is tested and
+     the result is false, the loop body will be skipped and the first statement after the while loop will
+     be executed.<br/></p>
 
 </div>
- {% endblock %}
+
+<div class="col-md-6">
+<pre><code>int number = 2;
+		while (number<=8){
+			System.out.println (number);
+			number++;
+		}
+
+}</pre></code>
+
+</div>
+
+
+</div>
+
+
+
+<h4 class="header4">Do...While loops</h4>
+
+<div class="row">
+<div class="col-md-6">
+<p class="text">A do...while loop is similar to a while loop, except that a do...while loop is guaranteed to execute
+    at least one time. The Boolean statement in a do...while loop appears at the end of the loop, so the loop will
+    always run once before the Boolean is tested.</p>
+
+</div>
+
+<div class="col-md-6">
+<pre><code>int number = 2;
+		do {
+			System.out.println(number);
+		number++;
+		}
+		while (number<=8);
+	}
+
+}</pre></code>
+
+</div>
+
+</div>
+
+</div>
+  </div>
+  </div>
+
+{% endblock %}
+</body>
+</html>
