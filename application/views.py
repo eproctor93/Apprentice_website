@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
-app.config['DEBUG'] = True
 
 @app.route('/layout')
 def layout():
@@ -62,7 +61,7 @@ def sqlInsert():
 @app.route('/SQL/sqlCreate')
 def sqlCreate():
     return render_template('sqlCreate.html')
-    
+
 @app.route('/SQL/sqlRelations')
 def sqlRelations():
     return render_template('sqlRelations.html')
