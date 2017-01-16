@@ -62,7 +62,6 @@
 
 
 
-
     <div id="HTML" class="tab-pane fade">
  {{ html('HTML CONTENT')  }}<!-- html!! -->
 
@@ -353,14 +352,13 @@ color: blue;
                 <br>
                 <br>
                 <br>
-                <br>
-                <br>
+
 
 
     <h4  class="header4">CSS SYNTAX</h4>
                 <br>
 
-        <img id="myImg" src="http://www.w3schools.com/css/selector.gif" alt="Git Cheatsheet" width="400" height="150">
+        <img id="myImg" src="http://www.w3schools.com/css/selector.gif" alt="Git Cheatsheet" width="425" height="200">
 
         <p class="text">Selectors are used in CSS to select the parts of the HTML that are being styled.
         You can use several different methods for selecting an element. Properties are defined
@@ -519,9 +517,9 @@ color: blue;
     </div>
 
         <div class="triangle">
- <h3><a class="info-toggle collapsed" data-toggle="collapse" href="#collapse" aria-expanded="false"><button type="button" class="btn btn-default btn-block" href="#collapse" data-toggle="collapse">Git Tutorial <span class="glyphicon glyphicon-chevron-down"></span></a></h3></button>
+ <h3><a class="info-toggle collapsed" data-toggle="collapse" href="#collapse" aria-expanded="false"><button type="button" class="btn btn-default btn-block" href="#collapse" data-toggle="collapse">CSS Basic Helpsheet <span class="glyphicon glyphicon-chevron-down"></span></a></h3></button>
         </div>
-    </div>
+
     <div class="collapse" id="collapse" aria-expanded="false">
     <div class="jumbotron">
 
@@ -530,18 +528,18 @@ color: blue;
   <br>
     <h5 class="header5" style="font-size: 16px;">Font-Family</h5> <br>
        <p class="text" style="font-size: 14px;">One of the most effective ways to enhance the look and feel of a website is by changing the font.
-       In CSS, font is managed using the font-family property: <br>
-       h1 { font-family: Georgia, serif; } <br>
-       Above, the font-family property of the h1 selector is set to the value of Georgia,
-       with serif as a fallback font. Fallback fonts are included in case a visitor’s web
+       In CSS, font is managed using the font-family property. <br> <br>
+       h1 { font-family: Georgia, serif; } <br> <br>
+       Above, the font-family property of the h1 selector is set to the value of 'Georgia',
+       with 'serif' as a fallback font. Fallback fonts are included in case a visitor’s web
            browser does not support the first font. Sometimes, more than one fallback font is included.</p>
 <br>
 <br>
 
 <h5 class="header5" style="font-size: 16px;">Colour</h5> <br>
-       <p class="text" style="font-size: 14px;">Black is not your only option when it comes to font color. In CSS, the color
-       property sets the color of a CSS selector’s font. <br>
-       h1 { color: red; } <br>
+       <p class="text" style="font-size: 14px;">In CSS, the color property sets the color of a CSS selector’s font. <br> <br>
+       h1 { color: red; } <br> <br>
+           Above, the font-color of the h1 selector is colored red.
        CSS comes equipped with 140 named colors, such as red, used above. For many situations, these named colors will suffice.
            However, web developers who want to get even more exact with their color choices can use hexadecimal and RGB color values.</p>
        <ul>
@@ -554,29 +552,39 @@ color: blue;
 <br>
   <h5 class="header5" style="font-size: 16px;">Font-Size</h5> <br>
    <p class="text" style="font-size: 14px;">The size of text has an impact on how users experience a website.
-       The font-size property sets the sizes of an HTML element’s text. <br>
-       h1 { font-size: 60px; } <br>
+       The font-size property sets the sizes of an HTML element’s text. <br> <br>
+       h1 { font-size: 60px; } <br> <br>
        In the CSS above, font-size is set to 60px. In CSS, size can be assigned in pixels(px), rems or ems.
-       Pixel(px) Standard unit of measurement for sizing fonts and other HTML elements.
-       Rem: Represents the default font size for the web browser. Rems can be used to ensure that HTML
+       <br> Pixel(px) Standard unit of measurement for sizing fonts and other HTML elements.
+       <br> Rem: Represents the default font size for the web browser. Rems can be used to ensure that HTML
        elements scale in proportion to each other on various web browsers and screen sizes.
        On most web browsers, 1rem is equivalent to 16px, 2rem is equivalent 32px (a doubling),
        3 rem is equivalent to 49px (a tripling) and so on.
-       em: a relative value that changes in proportion to the size of the parent element. <br>
+       <br> Em: a relative value that changes in proportion to the size of the parent element. <br>
        For example, if a parent element has font-size: 20px; child elements with font-size:
-       1em; would be quivalent to 20px. Child elements with font-size: 0.5em; would be equivalent to 10px (a halving and so on. <br>
-       We will primarily explore px and rem values since these are the most commonly used today.</p>
+       1em; would be quivalent to 20px. Child elements with font-size: 0.5em; would be equivalent to 10px. </p>
 </div>
 
+<div>
 
 <b class="text">CSS Glossary Helpsheet</b> <a href="https://www.codecademy.com/articles/glossary-css">
       <img src="http://wpguru.co.uk/wp-content/uploads/2013/09/CSS-Logo-214x300.png" class = "float-xs-right" alt="css_Logo" width="100" height="100">
     </a>
-       </div>
+</div>
 
 </div>
+
+
+
 </div>
+
+
+
+</div>
+
   </div>
+
+
 
 {% endblock %}
 </body>
