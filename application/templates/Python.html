@@ -113,7 +113,7 @@
     <div id ="FUNCTIONS" class="tab-pane fade">
         {{ html ('Functions') }}
      <!-- Functions-->
-        <h2 class="header2"> Functions</h2>
+        <h2 class="pyheader2"> Functions</h2>
 <p class="text"> What happens if you want to keep reusing the same code all over again, but it repeats throughout your code, then it becomes hard for code to read. Functions help solve that and you can reuse code, without writing the same block of code multiple times.
 A function contains at least <b>1 argument</b> and <b>1 parameter</b>, or it can have infinite amount of these. You may not have seen this but <b>print()</b> is a function. This function contains an <b>unlimited</b> amount of arguments. A function begins with the keyword <b>def</b> along with the function name and relevant arguments. After declaring a function, you end the first line with a colon (:).  You got to make sure that it is indented.
 You then print the output with the relevant arguments or return it. </p>
@@ -146,7 +146,7 @@ You then print the output with the relevant arguments or return it. </p>
     <div id ="SELECTION" class="tab-pane fade">
         {{ html ('Selection') }}
         <!-- Introduction to Selection-->
-        <h2 class="header2"> Selection </h2>
+        <h2 class="pyheader2"> Selection </h2>
 <p class="text">Selection in Python is also known as one type of control flow. Selection allows for a decision to be made, since there is more than one way to proceed  Here are a few examples. </p>
 
 <h3 class="header3">If statement </h3>
@@ -163,7 +163,8 @@ You then print the output with the relevant arguments or return it. </p>
 
 <br><br>
 
-<h3 class="header3">Else statements </h3>
+<h3 class="pyheader3">Else statements </h3>
+        <!-- Else Statement Explanation-->
         <p class="text">Else statement follows the if statement. This tells the program that if the if statement is not true, then the code after the else statement would execute.</p>
 <!-- Else Statement Code-->
     <div class = "row-lg-4 row-md-6 nrow-sm-10 row-xs-14">
@@ -173,9 +174,14 @@ You then print the output with the relevant arguments or return it. </p>
                print "I don't print anything"
            else:
                 print: "I get printed!"</code></pre></div>
-<h3 class="header3"> Elif Statements </h3>
+
+<h3 class="pyheader3"> Elif Statements </h3>
+        <!-- Elif Statement Explanation-->
+
  <p class="text">Elif is a short form for else if. It is saying if the first expression is true, it checks to see if the 2nd expression is true and so on and so on.
 In the example below, the elif statement is only checked if the first expression is false. </p>
+
+        <!-- Elif Statement code-->
     <div class = "row-lg-4 row-md-6 nrow-sm-10 row-xs-14">
      <button type="button" class="btn-btn-default btn-block" href="#row4Content" data-toggle="collapse"><h5 class="list-group-item-heading"> Elif statement example <span class ="glyphicon glyphicon-chevron-down"></span></h5></button>
      <div id="row6Content" class="collapse"><pre><code>if 8 > 9:
@@ -192,11 +198,12 @@ else:
 
     <div id ="ITERATION" class="tab-pane fade">
         {{ html ('Iteration') }}
+
         <!-- Introduction to Iteration-->
-        <h2 class="header2">What is iteration?</h2>
+        <h2 class="pyheader2">What is iteration?</h2>
 <p class ="text">If we wanted to do similar things many times, then iteration is a perfect tool to do that. There are many types of things that can happen with iteration. With every loop it has a condition which is an expression that decides whether the loop is going to be executed or not. </p>
 
-<h3 class="header3"> While Loops </h3>
+<h3 class="pyheader3"> While Loops </h3>
 <p class ="text"> While Loops are known as a <b>conditional</b> loop, which means that the loop will keep iterating until the conditions are met.
 It is <b>indefinite</b>, because there is no guarantee on when the loop will end. Like the if statement, the condition has a <b>boolean</b> expression which is set to either true or false. Once the condition is true, it will keep executing. If the condition is not true, it would stop and it would continue to the code outside of the loop. </p>
 
@@ -215,7 +222,7 @@ It is <b>indefinite</b>, because there is no guarantee on when the loop will end
 </div>
 
 
-<h3 class="header3"> For Loops </h3>
+<h3 class="pyheader3"> For Loops </h3>
         <!-- For Loops-->
 <p class="text">For Loop is used to repeat certain things a number of times. How many times the code should be repeated is indicated in the first line of the for loop. </p>
     <!-- For Loop Code Example-->
@@ -229,7 +236,7 @@ It is <b>indefinite</b>, because there is no guarantee on when the loop will end
     <div id ="LISTS" class="tab-pane fade">
         {{ html ('Lists') }}
         <!-- Introduction to Lists-->
-        <h2 class="header2"> Lists</h2>
+        <h2 class="pyheader2"> Lists</h2>
 <p class ="text"> If you come across a data structure, then arrays is one of the most fundamental ones that you come across in Python. It is not native to Python, but it has more of a general list.  Before you come across arrays, you will definitely come across lists. They are like an ordered collection of items and you can have a list of any data type. </p>
 
 <h3 class="header3">How to create a list </h3>
@@ -245,7 +252,7 @@ It is <b>indefinite</b>, because there is no guarantee on when the loop will end
     prog3 = 1995, "Plymouth", 1997, "England", 1999];</code></pre></div></div>
 
 
-<h3 class="header3"> Accessing things from the list </h3>
+<h3 class="pyheader3"> Accessing things from the list </h3>
 <p class="text">If you wanted to access things fron the list, you would say the list name, followed by the index number you wanted to look at. </p>
 
 
@@ -256,7 +263,7 @@ It is <b>indefinite</b>, because there is no guarantee on when the loop will end
   print "prog2[1:5]:", list2[1:5] # This prints index 1 all the way to index 4 in <b><i>prog2</i></b>. So that would be 2,3,4,5.
 </code></pre></div>
 
-<h3 class="header3">Updating and deleting lists </h3>
+<h3 class="pyheader3">Updating and deleting lists </h3>
  <p class="text">You can modify things from the list by using the following items.  </p>
 
         <!-- List Table-->
