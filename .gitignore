@@ -87,6 +87,11 @@ ENV/
 # Spyder project settings
 .spyderproject
 .idea/
+workspace.xml
+misc.xml
+Apprentice.Website.iml
+
+
 
 
 
