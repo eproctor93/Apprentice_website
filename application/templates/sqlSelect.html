@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<br><br>
+
+<h4 class="sqlheader4"> Current Page: SQL Select Statement</h4>
+   {% include "includes/sqlmenu.html"  %}
+
+<h2 class="sqlheader2">SQL SELECT Statement</h2>
+ <p class="text">This statement is used to select data from a database. </p>
+
+    <div class ="container" id="text4">
+  <div class = "rowhome">
+    <div class = "row-lg-4 row-md-6 nrow-sm-10 row-xs-14">
+     <button type="button" class="btn-btn-default btn-block" href="#row1Content" data-toggle="collapse"><h5 class="list-group-item-heading"> Select Statement Syntax <span class ="glyphicon glyphicon-chevron-down"></span></h5></button>
+     <div id="row1Content" class="collapse"><pre><code>SELECT column_name,column_name
+    FROM table_name;</code></pre></div></div></div>
+
+    <div class = "rowhome">
+    <div class = "row-lg-4 row-md-6 nrow-sm-10 row-xs-14">
+     <button type="button" class="btn-btn-default btn-block" href="#row2Content" data-toggle="collapse"><h5 class="list-group-item-heading"> Select Statement Example <span class ="glyphicon glyphicon-chevron-down"></span></h5></button>
+     <div id="row2Content" class="collapse"><pre><code>SELECT CustomerName, City FROM Customers;</code></pre></div></div></div></div>
+
+</div>
+
+{% endblock %}

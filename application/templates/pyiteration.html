@@ -1,78 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+{% extends "layout.html" %}
+{% block body %}
 
-<title>Coding - Python</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
-<body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" id="picture" href="Homepage.html"></a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="Homepage.html">Home</a></li>
-            <li><a href="PE.html">Personal Experiences</a></li>
-          <li><a href="Links.html">Useful Links</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Coding<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="html_css_page_INTRO.html">HTML-CSS</a></li>
-              <li><a href="Git.html">Git</a></li>
-              <li><a href="SQL.html">SQL</a></li>
-              <li><a href="Java.html">Java</a></li>
-              <li class="active"><a href="Python.html">Python</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav><div class="content">
+<br><br>
+<h4 class="header4"> Current Page: Iteration </h4>
+{% include "includes/pythonmenu.html"  %}
 
-<br>
+<h2 class="header2">What is iteration?</h2>
+<p class ="text">If we wanted to do similar things many times, then iteration is a perfect tool to do that. There are many types of things that can happen with iteration. With every loop it has a condition which is an expression that decides whether the loop is going to be executed or not. </p>
 
-
-</br>
-
-<br>
-
-
-</br>
-
-<h4> Current Page: Iteration </h4>
-
-
-<a href="Python.html"  class="btn btn-default"> <role type="button"> Introduction to Python</a>
-<a href="pythonbasics.html" class="btn btn-default"> <role type="button"> Basic Programming Constructs</a>
-<a href="pyvariables.html" class="btn btn-default"> <role type="button"> Variables and Data Types</a>
-<a href="pyfunctions.html" class="btn btn-default"> <role type="button"> Functions </a>
-<a href="pyselection.html" class="btn btn-default"> <role type="button"> Selection </a>
-<a href="pyiteration.html" class="btn btn-success"> <role type="button"> Iteration</a>
-<a href="pylists.html" class="btn btn-default"> <role type="button"> Lists </a>
-
-<h2> What is iteration?</h2>
-<p>If we wanted to do similar things many times, then iteration is a perfect tool to do that. There are many types of things that can happen with iteration. With every loop it has a condition which is an expression that decides whether the loop is going to be executed or not.
-
-<h3> While Loops </h3>
-<p> While Loops are known as a <b>conditional</b> loop, which means that the loop will keep iterating until the conditions are met.
+<h3 class="header3"> While Loops </h3>
+<p class ="text"> While Loops are known as a <b>conditional</b> loop, which means that the loop will keep iterating until the conditions are met.
 It is <b>indefinite</b>, because there is no guarantee on when the loop will end. Like the if statement, the condition has a <b>boolean</b> expression which is set to either true or false. Once the condition is true, it will keep executing. If the condition is not true, it would stop and it would continue to the code outside of the loop. </p>
 
 <div class ="container" id="text3">
   <div class = "rowhome">
     <div class = "row-lg-4 row-md-6 nrow-sm-10 row-xs-14">
-     <button type="button" class="btn-btn-default btn-block" href="#row1Content" data-toggle="collapse"><h5 class="list-group-item-heading"> While Loop Example <span class ="glyphicon glyphicon-chevron-down"></span></h5></button>
+     <button type="button" class="btn-btn-default btn-block" href="#row7Content" data-toggle="collapse"><h5 class="list-group-item-heading"> While Loop Example <span class ="glyphicon glyphicon-chevron-down"></span></h5></button>
      <div id="row1Content" class="collapse"><pre><code>password = "secret"
      while password != "secret":
          password = input("Please enter the password: ")
@@ -83,27 +26,16 @@ It is <b>indefinite</b>, because there is no guarantee on when the loop will end
 </div>
 
 
-<h3> For Loops </h3>
-<p>For Loop is used to repeat certain things a number of times. How many times the code should be repeated is indicated in the first line of the for loop. </p>
+<h3 class="header3"> For Loops </h3>
+<p class="text">For Loop is used to repeat certain things a number of times. How many times the code should be repeated is indicated in the first line of the for loop. </p>
     <div class = "row-lg-4 row-md-6 nrow-sm-10 row-xs-14">
-     <button type="button" class="btn-btn-default btn-block" href="#row2Content" data-toggle="collapse"><h5 class="list-group-item-heading"> Basic For Loop Example <span class ="glyphicon glyphicon-chevron-down"></span></h5></button>
+     <button type="button" class="btn-btn-default btn-block" href="#row8Content" data-toggle="collapse"><h5 class="list-group-item-heading"> Basic For Loop Example <span class ="glyphicon glyphicon-chevron-down"></span></h5></button>
      <div id="row2Content" class="collapse">
        <pre><code>for counter in range(5)
-      print("hello world")</pre></code>
-
-    </div>
+      print("hello world") </code></pre></div></div></div></div></div>
 
 
- </div><br><br>
 
+<br><br>
 
-<script
-  src="https://code.jquery.com/jquery-3.1.1.js"
-  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-  crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
-<footer class="footer">
-  <p>Posted by: <strong>Land Registry IT Apprentices</strong></p>
-</footer>
-</html>
+{% endblock %}

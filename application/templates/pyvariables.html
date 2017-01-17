@@ -1,77 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+{% extends "layout.html" %}
+{% block body %}
 
-<title>Coding - Python</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
-<body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" id="picture" href="Homepage.html"></a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="Homepage.html">Home</a></li>
-            <li><a href="PE.html">Personal Experiences</a></li>
-          <li><a href="Links.html">Useful Links</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Coding<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="html_css_page_INTRO.html">HTML-CSS</a></li>
-              <li><a href="Git.html">Git</a></li>
-              <li><a href="SQL.html">SQL</a></li>
-              <li><a href="Java.html">Java</a></li>
-              <li class="active"><a href="Python.html">Python</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav><div class="content">
-
-<br>
-
-
-</br>
-
-<br>
-
-
-</br>
-
-<h4> Current Page: Variables and Data Types </h4>
-
-
-<a href="Python.html"  class="btn btn-default"> <role type="button"> Introduction to Python</a>
-<a href="pythonbasics.html" class="btn btn-default"> <role type="button"> Basic Programming Constructs</a>
-<a href="pyvariables.html" class="btn btn-success"> <role type="button"> Variables and Data Types</a>
-<a href="pyfunctions.html" class="btn btn-default"> <role type="button"> Functions </a>
-<a href="pyselection.html" class="btn btn-default"> <role type="button"> Selection </a>
-<a href="pyiteration.html" class="btn btn-default"> <role type="button"> Iteration</a>
-<a href="pylists.html" class="btn btn-default"> <role type="button"> Lists </a>
-
-<h2> Variables </h2>
-<p> If you want to create a web app, they all involve storing and working with different types of data by using variables. Variables stores that particular data and gives it a specific name. Eg:
-<code> variable = 5 </code></div>
-
-This variable called variable now stores the number 5. How you name the variable it doesn’t matter. However it is strongly suggested that you start the first word of your variable in lower case.
+<br><br>
+<h4 class="pyheader4"> Current Page: Variables and Data Types </h4>
+{% include "includes/pythonmenu.html"  %}
+<h2 class="pyheader2">Variables </h2>
+ <p class="text">If you want to create a web app, they all involve storing and working with different types of data by using variables. Variables stores that particular data and gives it a specific name. Eg:
+<code> variable = 5 </code> </p> <p class="text"> This variable called variable now stores the number 5. How you name the variable it doesn’t matter. However it is strongly suggested that you start the first word of your variable in lower case.
 </p>
 
-<h2> Data Types </h2>
-<p>The data types in Python can be grouped into several classes. These are the following: </p>
-<table class="table table-bordered">
+<h2 class="pyheader2"> Data Types </h2>
+ <p class="text">The data types in Python can be grouped into several classes. These are the following: </p>
+ <table class="table table-bordered table-inverse">
     <thead>
       <tr>
         <th>Data Type</th>
@@ -108,19 +48,6 @@ This variable called variable now stores the number 5. How you name the variable
         <td>Python Dictionaries - element of a list is associated with a definition. </td>
       </tr>
     </tbody>
-  </table>
+  </table></div>
 
-
- </div><br><br>
-
-
-<script
-  src="https://code.jquery.com/jquery-3.1.1.js"
-  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-  crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
-<footer class="footer">
-  <p>Posted by: <strong>Land Registry IT Apprentices</strong></p>
-</footer>
-</html>
+{% endblock %}

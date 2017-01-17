@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<br><br>
+<h4 class="sqlheader4"> Current Page: Basic SQL Syntax </h4>
+
+{% include "includes/sqlmenu.html"  %}
+
+    <h2 class="sqlheader2">Syntax </h2>
+
+    <p class="text"> A database contains one or more tables which are identifed by a name (eg customers). Most actions need to be done on a database with SQL statements. One example is that this SQL statement selects all the records in the "Customers" table. </p>
+
+    <p class="text"><b>SELECT * FROM Customers;</b></p>
+    <p class="text"> Every SQL statement ends in a semicolon, because it allows more than one SQL statement to be executed. SQL has one major difference from all programming languages and that is SQL keywords are <b>NOT</b> case sensitive. For example, select is the same as SELECT. </p>
+    <p class="text">We will cover in more detail in separate pages about the commands. But, here are some of the most important SQL commands</p>
+
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Command</th>
+        <th>Description</th>
+      </tr>
+
+    </thead>
+    <tbody>
+      <tr>
+        <td>SELECT</td>
+        <td>Extracts data from a database</td>
+    </tr>
+
+    <tr>
+    <td>UPDATE</td>
+    <td>Updates data in a database</td>
+    </tr>
+
+    <tr>
+    <td>DELETE</td>
+    <td>Deletes data from a database </td>
+    </tr>
+
+    <tr>
+    <td>INSERT INTO</td>
+    <td>Inserts new data into a database </td>
+    </tr>
+
+    <tr>
+    <td>CREATE TABLE</td>
+    <td>Creates a new table </td>
+    </tr>
+
+    <tr>
+    <td>ALTER TABLE</td>
+    <td>Modifies a table</td>
+    </tr>
+
+    <tr>
+    <td>DROP TABLE</td>
+    <td>Deletes a table</td>
+    </tr>
+
+      </tbody>
+  </table>
+
+</div>
+
+{% endblock %}
