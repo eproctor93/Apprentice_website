@@ -90,45 +90,10 @@ def sqlCreate():
 def sqlRelations():
     return render_template('sqlRelations.html')
 
-<<<<<<< HEAD
-@app.route('/SQL/sqlSyntax')
-def sqlSyntax():
-    return render_template('sqlSyntax.html')
-
-@app.route('/SQL/sqlSelect')
-def sqlSelect():
-    return render_template('sqlSelect.html')
-
-@app.route('/SQL/sqlUpdate')
-def sqlUpdate():
-    return render_template('sqlUpdate.html')
-
-@app.route('/SQL/sqlInsert')
-def sqlInsert():
-    return render_template('sqlInsert.html')
-
-@app.route('/SQL/sqlCreate')
-def sqlCreate():
-    return render_template('sqlCreate.html')
-
-@app.route('/SQL/sqlRelations')
-def sqlRelations():
-    return render_template('sqlRelations.html')
-
-@app.route('/HTML')
-def html():
-    return render_template('HTML-CSS.html', pagetitle='HTML-CSS')
-=======
 @app.route('/HTML')
 def html():
     title='HTML & CSS Introduction'
-    return render_template('html_INTRO.html', pagetitle=title)
-
-@app.route('/CSS-Content')
-def csscontent():
-    title= 'CSS CONTENT'
-    return render_template('html_css_content.html', pagetitle=title)
->>>>>>> Initial Commit
+    return render_template('HTML-CSS.html', pagetitle=title)
 
 @app.route('/Git')
 def git():
