@@ -69,12 +69,7 @@ def sqlRelations():
 @app.route('/HTML')
 def html():
     title='HTML & CSS Introduction'
-    return render_template('html_INTRO.html', pagetitle=title)
-
-@app.route('/CSS-Content')
-def csscontent():
-    title= 'CSS CONTENT'
-    return render_template('html_css_content.html', pagetitle=title)
+    return render_template('HTML-CSS.html', pagetitle=title)
 
 @app.route('/Git')
 def git():
