@@ -1,4 +1,4 @@
-/* Main body of text (on all pages) *START* */
+/* Main body of text (on all pages) */
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif');
 
 .text {
@@ -27,6 +27,20 @@ margin-right: 20px;
 }
  /* this is in the navbar */
 
+/* Homepage dropdown bars */
+.rowhome {
+  width: 50%;
+  padding-bottom: 3%;
+  margin-right: auto;
+  margin-left: 0%;
+}
+/* Homepage dropdown bars */
+
+/* Personal Experiences page */
+.PE {
+  padding-left: 25%;
+}
+/* Personal Experiences page */
 
 /* Links Page CSS content *START* */
 .Applications {
@@ -35,6 +49,8 @@ margin-right: 20px;
     text-align: center;
     color: black;
     border-color: black;
+    width: 50%;
+    margin: auto;
 }
 /* Links Page CSS content *END* */
 
