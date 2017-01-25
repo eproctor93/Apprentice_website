@@ -38,30 +38,6 @@ def pyiteration():
 def pylists():
     return render_template('pylists.html')
 
-@app.route('/python/pythonbasics')
-def pythonbasics():
-    return render_template('pythonbasics.html')
-
-@app.route('/python/pyvariables')
-def pyvariables():
-    return render_template('pyvariables.html')
-
-@app.route('/python/pyfunctions')
-def pyfunctions():
-    return render_template('pyfunctions.html')
-
-@app.route('/python/pyselection')
-def pyselection():
-    return render_template('pyselection.html')
-
-@app.route('/python/pyiteration')
-def pyiteration():
-    return render_template('pyiteration.html')
-
-@app.route('/python/pylists')
-def pylists():
-    return render_template('pylists.html')
-
 @app.route('/SQL')
 def SQL():
     return render_template('SQL.html')
