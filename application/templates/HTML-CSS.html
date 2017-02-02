@@ -1,11 +1,11 @@
 {% extends "layout.html" %}
 {% from "macros.html" import html, content, list, html_important with context %}
 {% block body %}
-<div class="html-css">
+<div>
   <br>
   <br>
 <hr>
-    <p class="text_central"><b>HTML</b> and <b>CSS</b> are two of the core technologies for building Web pages. HTML describes the
+    <p class="text"><b>HTML</b> and <b>CSS</b> are two of the core technologies for building Web pages. HTML describes the
   structure of a web page while CSS defines the visual appearance.<br>
   It is usually better to write HTML and CSS in separate files. Separating structure and style has many advantages.
   HTML will always represent content, and CSS will always represent the appearance of that content.
@@ -19,7 +19,7 @@
     <div id="INTRO" class="tab-pane fade in active">
           {{ html('Introduction')  }}
 <!-- introooo -->
-<img id="myImg" src="https://www.sololearn.com/Uploads/html-css.jpg" alt="Git Cheatsheet" width="300" height="200">
+<img style="border-radius: 5px;" src="https://www.sololearn.com/Uploads/html-css.jpg" alt="HTML/CSS" width="300" height="200">
 {{ content('HTML')}}
 <br>
     <ul>
@@ -30,7 +30,7 @@
         {{ list('HTML tags label pieces of content such as "heading", "paragraph", "table", and so on...') }}
         {{ list('Browsers do not display the HTML tags, but use them to render the content of the page') }}
     </ul>
-<h4 class="header4">CSS</h4>
+<h4>CSS</h4>
     <ul>
       {{ list('CSS stands for Cascading Style Sheets') }}
       {{ list('CSS describes how HTML elements are to be displayed on screen, paper, or in other media') }}
@@ -49,7 +49,7 @@
           <li class="text">To end the HTML document always put &lt;html&gt; on the last line.</li>
         </ul>
 <hr>
-      <h4 class="header4">TAGS</h4>
+      <h4>TAGS</h4>
       <div class="row">
         <div class="col-md-6">
         <p class="text">Things inside &lt;&gt;s are called tags.<br>
@@ -66,7 +66,7 @@
       </div>
     </div>
     <p class="text"><b>There are always two parts to an HTML file: the HEAD and the BODY</b></p>
-    <h4 class="header4">HEAD</h4>
+    <h4>HEAD</h4>
       <div class="row">
         <div class="col-md-6">
        <p class="text">The &lt;head&gt; contains information about your HTML file, like its title.
@@ -82,7 +82,7 @@
       &lt;/html&gt;</code></pre>
       </div>
     </div>
-     <h4 class="header4">BODY</h4>
+     <h4>BODY</h4>
       <div class="row">
         <div class="col-md-6">
         <p class="text">The &lt;body&gt; tag defines the document's body. The &lt;body&gt; element contains all the
@@ -103,7 +103,7 @@
         &lt;/html&gt;</code></pre>
       </div>
         </div>
-        <h4 class="header4">PARAGRAPHS</h4>
+        <h4>PARAGRAPHS</h4>
         <div class="row">
             <div class="col-md-6">
                 <p class="text">
@@ -123,7 +123,7 @@
         &lt;/html&gt;</code></pre>
     </div>
         </div>
-    <h4 class="header4">HEADINGS</h4>
+    <h4>HEADINGS</h4>
        <div class="row">
         <div class="col-md-6">
         <p class="text">HTML actually lets us have more than one heading size.
@@ -142,7 +142,7 @@
   </div>
          </div>
     <br>
-    <h4 class="header4">LISTS</h4>
+    <h4>LISTS</h4>
            <div class="row">
         <div class="col-md-6">
         <p class="text">HTML supports two kinds of lists: Ordered lists and Unordered lists. Within lists
@@ -175,7 +175,7 @@
 &lt;/ul&gt;</ul></code></pre>
   </div>
     </div>
-     <h4 class="header4">DIVS</h4>
+     <h4>DIVS</h4>
           <div class="row">
         <div class="col-md-6">
         <p class="text">Div elements divide your page by enclosing other elements.
@@ -198,7 +198,7 @@
     &lt;/html&gt;</code></pre>
             </div>
         </div>
-    <h4 class="header4">HYPERLINKS</h4>
+    <h4>HYPERLINKS</h4>
            <div class="row">
         <div class="col-md-6">
          <p class="text">Hyperlinks, or simply a link, is a reference to data that the reader can directly follow either by clicking,
@@ -211,10 +211,10 @@
           </div>
  <div class="col-md-6">
     <pre><code>&lt;a href="https://www.codecademy.com"&gt;My Favorite Site!&lt;/a&gt;<br>
-<a href="https://www.codecademy.com">My Favorite Site!</a></code></pre>
+<a href="https://www.codecademy.com" target="_blank">My Favorite Site!   </a><img src="http://findicons.com/files/icons/2315/default_icon/256/open_in_new_window.png" width="12" height="12"></code></pre>
             </div>
           </div>
-    <h4 class="header4">IMAGES</h4>
+    <h4>IMAGES</h4>
            <div class="row">
         <div class="col-md-6">
          <p class="text">To add images, the image tag needs to be used, &lt;img&gt;. This tag is a bit different from the others.
@@ -229,9 +229,10 @@
                       alt="css_Logo" width="350" height="200"><br></code></pre>
                </div>
                </div>
-      <b class="text">HTML Glossary Helpsheet</b> <a href="https://www.codecademy.com/articles/glossary-html">
+      <b class="text">HTML Glossary Helpsheet</b> <a href="https://www.codecademy.com/articles/glossary-html" target="_blank">
       <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" class = "float-xs-right" alt="css_Logo" width="100" height="100">
     </a>
+    <img src="http://findicons.com/files/icons/2315/default_icon/256/open_in_new_window.png" width="12" height="12">
       </div>
     <div id="CSS" class="tab-pane fade">
        {{ html('CSS CONTENT')  }}
@@ -266,9 +267,9 @@ color: blue;
                 <br>
                 <br>
                 <div>
-    <h4  class="header4">CSS SYNTAX</h4>
+    <h4>CSS SYNTAX</h4>
                 <br>
-        <img id="myImg" src="http://www.w3schools.com/css/selector.gif" alt="Git Cheatsheet" width="400" height="150">
+        <img src="http://www.w3schools.com/css/selector.gif" alt="CSS Syntax" width="650" height="150">
         <p class="text">Selectors are used in CSS to select the parts of the HTML that are being styled.
         You can use several different methods for selecting an element. Properties are defined
         within selectors by defining a property and a value. They are separated with a colon
@@ -279,7 +280,7 @@ color: blue;
         it's important remember to put a semicolon (;) at the end of each line.
         The semicolon tells CSS that one property-value pair is over and it's time to
         move on to the next one. Without semicolons, it'll become confused and your page won't look right.</p>
-    <h4 class="header4">Syntax general example:</h4>
+    <h4>Syntax general example:</h4>
     <div class="row">
     <div class="col-md-6">
     <p class="text">selector { property: value; }<br>In this case, all html &lt;h1&gt; elements will be colored blue,
@@ -292,7 +293,7 @@ color: blue;
         }</code></pre>
     </div>
     </div>
-    <h4 class="header4">The element Selector</h4>
+    <h4>The element Selector</h4>
     <div class="row">
     <div class="col-md-6">
     <p class="text">CSS selectors are used to "find" (or select) HTML elements based on their element name,
@@ -306,7 +307,7 @@ color: blue;
         }</code></pre>
     </div>
     </div>
-    <h4 class="header4">Type Selectors</h4>
+    <h4>Type Selectors</h4>
     <div class="row">
     <div class="col-md-6">
     <p class="text">The type selector targets all elements with a specific HTML tag. If we wanted to address all h1 elements,
@@ -321,7 +322,7 @@ color: blue;
         }</code></pre>
     </div>
     </div>
-    <h4 class="header4">The ID Selector</h4>
+    <h4>The ID Selector</h4>
     <div class="row">
     <div class="col-md-6">
     <p class="text">The id selector uses the id attribute of an HTML element to select a specific element.
@@ -337,7 +338,7 @@ color: blue;
         }</code></pre>
     </div>
     </div>
-    <h4 class="header4">The class Selector</h4>
+    <h4>The class Selector</h4>
     <div class="row">
     <div class="col-md-6">
     <p class="text">The class selector selects elements with a specific class attribute.
@@ -351,7 +352,7 @@ color: blue;
         }</code></pre>
     </div>
     </div>
-    <h4 class="header4">Grouping Selectors</h4>
+    <h4>Grouping Selectors</h4>
     <div class="row">
     <div class="col-md-6">
     <p class="text">If you have elements with the same style definitions, like this:</p>
@@ -388,9 +389,9 @@ color: blue;
         </div>
     <div class="collapse" id="collapse" aria-expanded="false">
     <div class="jumbotron">
-  <h2  class="header2" style="text-align: center;">CSS basics</h2>
+  <h2   style="text-align: center;">CSS basics</h2>
   <br>
-    <h5 class="header5" style="font-size: 16px;">Font-Family</h5> <br>
+    <h5  style="font-size: 16px;">Font-Family</h5> <br>
        <p class="text" style="font-size: 14px;">One of the most effective ways to enhance the look and feel of a website is by changing the font.
        In CSS, font is managed using the font-family property: <br>
        h1 { font-family: Georgia, serif; } <br>
@@ -399,7 +400,7 @@ color: blue;
            browser does not support the first font. Sometimes, more than one fallback font is included.</p>
 <br>
 <br>
-<h5 class="header5" style="font-size: 16px;">Colour</h5> <br>
+<h5  style="font-size: 16px;">Colour</h5> <br>
        <p class="text" style="font-size: 14px;">Black is not your only option when it comes to font color. In CSS, the color
        property sets the color of a CSS selector’s font. <br>
        h1 { color: red; } <br>
@@ -413,7 +414,7 @@ color: blue;
          When mixed together, the three values create a specific color. For example: purple can be represented as rgb(128,0,128)</li>
        </ul>
 <br>
-  <h5 class="header5" style="font-size: 16px;">Font-Size</h5> <br>
+  <h5  style="font-size: 16px;">Font-Size</h5> <br>
    <p class="text" style="font-size: 14px;">The size of text has an impact on how users experience a website.
        The font-size property sets the sizes of an HTML element’s text. <br>
        h1 { font-size: 60px; } <br>
@@ -429,9 +430,10 @@ color: blue;
        We will primarily explore px and rem values since these are the most commonly used today.</p>
 </div>
        </div>
-       <b class="text">CSS Glossary Helpsheet</b> <a href="https://www.codecademy.com/articles/glossary-css">
+       <b class="text">CSS Glossary Helpsheet</b> <a href="https://www.codecademy.com/articles/glossary-css" target="_blank">
              <img src="http://wpguru.co.uk/wp-content/uploads/2013/09/CSS-Logo-214x300.png" class = "float-xs-right" alt="css_Logo" width="100" height="100">
            </a>
+           <img src="http://findicons.com/files/icons/2315/default_icon/256/open_in_new_window.png" width="12" height="12">
          </div>
 </div>
 </div>
