@@ -1,10 +1,251 @@
 {% extends "layout.html" %}
+{% from "macros.html" import html, content, list, html_important with context %}
 {% block body %}
-<div class="content">
- </div><br><br>
+<div>
+  <br>
+  <br>
+<hr>
+    <p class="text"> SQL stands for Structured Query Language. It is designed to store and manipulate data in relational databases. It follows simple and declarative statements which makes sure that the data is accurate and secure. The integrity of databases are also secure too. </p>
+
+    <ul class="nav nav-pills" >
+    <li class="active"><a data-toggle="pill" href="#INTRO">Introduction to SQL</a></li>
+    <li><a data-toggle="pill" href="#SYNTAX">Basic SQL Syntax</a></li>
+    <li><a data-toggle="pill" href="#SELECT">Select Statement</a></li>
+    <li><a data-toggle="pill" href="#UPDATE">Update & Delete Statement</a></li>
+    <li><a data-toggle="pill" href="#INSERT">Insert Into Statement</a></li>
+    <li><a data-toggle="pill" href="#CREATE">Database creation</a></li>
+  </ul>
+
+      <div class="tab-content">
+<div id="INTRO" class="tab-pane fade in active">
+    {{ html('Introduction To SQL')  }}
+<!-- Introduction -->
+
+    <h2> What is SQL used for?</h2>
+    <p class="text"> It is used across web frameworks and all database applications. SQL gives you the freedom to explore your data a lot more. There are concepts that apply to nearly every data storage system and learning SQL should help you understand more about data storage systems. </p>
+    <p class="text">The other things that SQL can do are:</p>
+
+  <!-- SQL List -->
+
+   <ul>
+     <li class="text">Execute queries against a database</li>
+     <li class="text">Find data from a database</li>
+     <li class="text">Can insert, update and delete records from a database.</li>
+     <li class="text">Can create new databases </li>
+     <li class="text">Can create new tables </li>
+     <li class="text">And lots more </li>
+   </ul>
+
+</div>
+
+ <div id="SYNTAX" class="tab-pane fade">
+    {{ html ('Syntax') }}
+
+       <h2>Key Concepts </h2>
+     <!-- Key Concepts -->
+
+    <p class="text"> A database contains one or more tables which are identifed by a name (eg customers). Most actions need to be done on a database with SQL statements. One example is that this SQL statement selects all the records in the "Customers" table. </p>
+
+    <p class="text"><b>SELECT * FROM Customers;</b></p>
+    <p class="text"> Every SQL statement ends in a semicolon, because it allows more than one SQL statement to be executed. SQL has one major difference from all programming languages and that is SQL keywords are <b>NOT</b> case sensitive. For example, select is the same as SELECT. </p>
+    <p class="text">We will cover in more detail in separate pages about the commands. But, here are some of the most important SQL commands</p>
+
+     <!-- Table with all the SQL Commands -->
+
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Command</th>
+        <th>Description</th>
+      </tr>
+
+    </thead>
+    <tbody>
+      <tr>
+        <td>SELECT</td>
+        <td>Extracts data from a database</td>
+    </tr>
+
+    <tr>
+    <td>UPDATE</td>
+    <td>Updates data in a database</td>
+    </tr>
+
+    <tr>
+    <td>DELETE</td>
+    <td>Deletes data from a database </td>
+    </tr>
+
+    <tr>
+    <td>INSERT INTO</td>
+    <td>Inserts new data into a database </td>
+    </tr>
+
+    <tr>
+    <td>CREATE TABLE</td>
+    <td>Creates a new table </td>
+    </tr>
+
+    <tr>
+    <td>ALTER TABLE</td>
+    <td>Modifies a table</td>
+    </tr>
+
+    <tr>
+    <td>DROP TABLE</td>
+    <td>Deletes a table</td>
+    </tr>
+
+      </tbody>
+  </table>
+
+</div>
+
+
+<div id="SELECT" class="tab-pane fade">
+ {{ html ('SQL Select Statement') }}
+    <!-- Select Statement Introduction -->
+
+<h2>SQL SELECT Statement</h2>
+ <p class="text">This statement is used to select data from a database. </p>
+
+    <!-- Select Statement Code -->
+
+    <div class ="container">
+  <div class = "rowhome">
+    <div class = "row-lg-4 row-md-6 nrow-sm-10 row-xs-14">
+     <button type="button" class="btn-btn-default btn-block" href="#row1Content" data-toggle="collapse"><h5 class="list-group-item-heading"> Select Statement Syntax <span class ="glyphicon glyphicon-chevron-down"></span></h5></button>
+     <div id="row1Content" class="collapse"><pre><code>SELECT column_name,column_name
+    FROM table_name;</code></pre></div></div></div>
+
+    <div class = "rowhome">
+    <div class = "row-lg-4 row-md-6 nrow-sm-10 row-xs-14">
+     <button type="button" class="btn-btn-default btn-block" href="#row2Content" data-toggle="collapse"><h5 class="list-group-item-heading"> Select Statement Example <span class ="glyphicon glyphicon-chevron-down"></span></h5></button>
+     <div id="row2Content" class="collapse"><pre><code>SELECT CustomerName, City FROM Customers;</code></pre></div></div></div></div>
+
+</div>
 
 
 
+<div id="UPDATE" class="tab-pane fade">
+ {{ html ('SQL Update and Delete Statement') }}
 
+    <!-- Update Statement Introduction  -->
+   <h2>SQL Update Statement</h2>
+<p class="text"> The update statement modifies certain pieces of data in a table. </p>
+
+    <!-- Update Statement Code  -->
+
+   <div class ="container">
+  <div class = "rowhome">
+    <div class = "row-lg-4 row-md-6 nrow-sm-10 row-xs-14">
+     <button type="button" class="btn-btn-default btn-block" href="#row3Content" data-toggle="collapse"><h5 class="list-group-item-heading"> Update Statement Syntax <span class ="glyphicon glyphicon-chevron-down"></span></h5></button>
+     <div id="row3Content" class="collapse"><pre><code>UPDATE table_name
+SET column1=value1,column2=value2,...
+WHERE some_column=some_value;
+FROM table_name;</code></pre></div></div></div></div>
+
+<br><br>
+
+<p class="text"> The WHERE clause is important because it specifies what records it is talking about. If the WHERE clause is not included in the statement, then it assumes that all records will be updated. </p>
+<div class ="container">
+  <div class = "rowhome">
+    <div class = "row-lg-4 row-md-6 nrow-sm-10 row-xs-14">
+     <button type="button" class="btn-btn-default btn-block" href="#row4Content" data-toggle="collapse"><h5 class="list-group-item-heading"> Update Statement Example<span class ="glyphicon glyphicon-chevron-down"></span></h5></button>
+     <div id="row4Content" class="collapse"><pre><code>
+UPDATE Customers
+SET City='Hamburg'
+WHERE CustomerID=1;</code></pre></div></div></div></div>
+
+<br><br>
+
+<!-- Delete Statement Introduction  -->
+<h2>SQL Delete Statement</h2>
+<p class="text">The SQL delete Statement is where you delete certain things from a table. It is very important that you use the delete statement with caution, because you don’t want to delete important data or a whole table. You can't undo this statement, so it is important that you know what you are doing with this statement. </p>
+
+    <!-- Delete Statement Code  -->
+    <div class ="container">
+  <div class = "rowhome">
+    <div class = "row-lg-4 row-md-6 nrow-sm-10 row-xs-14">
+     <button type="button" class="btn-btn-default btn-block" href="#row5Content" data-toggle="collapse"><h5 class="list-group-item-heading"> Delete Statement Example <span class ="glyphicon glyphicon-chevron-down"></span></h5></button>
+     <div id="row5Content" class="collapse"><pre><code>DELETE FROM Customers
+WHERE CustomerName= 'Alfreds Futterkiste' AND ContactName='Maria Anders';</code></pre></div></div></div></div>
+
+ </div>
+
+<div id="INSERT" class="tab-pane fade">
+ {{ html ('SQL INSERT INTO Statement') }}
+    <!-- Insert Statement Introduction  -->
+
+ <h2>SQL INSERT INTO Statement</h2>
+<p class="text">This statement is used to insert new records in a table. There are two ways in which you can write these statements. The first way is that you don’t have to specify the column where the data is inserted. It assumes it will be updated to all columns and the values have to be in the right order. Another way of doing it is that you specify both the column name and the values to be inserted. </p>
+
+    <!-- Insert Statement Code  -->
+   <div class ="container">
+  <div class = "rowhome">
+    <div class = "row-lg-4 row-md-6 nrow-sm-10 row-xs-14">
+     <button type="button" class="btn-btn-default btn-block" href="#row6Content" data-toggle="collapse"><h5 class="list-group-item-heading"> Insert Statement Example 1: <span class ="glyphicon glyphicon-chevron-down"></span></h5></button>
+     <div id="row6Content" class="collapse"><pre><code>INSERT INTO table_name
+VALUES (value1,value2,value3,...);</code></pre></div></div></div>
+
+<div class = "rowhome">
+    <div class = "row-lg-4 row-md-6 nrow-sm-10 row-xs-14">
+        <button type="button" class="btn-btn-default btn-block" href="#row7Content" data-toggle="collapse"><h5 class="list-group-item-heading"> Insert Statement Example 2: <span class ="glyphicon glyphicon-chevron-down"></span></h5></button>
+        <div id="row7Content" class="collapse"><pre><code>INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES ('Cardinal','Tom B. Erichsen','Skagen 21','Stavanger','4006','Norway'); </code></pre></div></div></div></div>
+</div>
+
+
+
+<div id="CREATE" class="tab-pane fade">
+
+    <!-- Create Statements Introduction  -->
+ {{ html ('SQL CREATE STATEMENTS') }}
+<h2> Creating a Database</h2>
+
+<p class="text">You can't do any SQL statements until you have actually created a database first. To create a database, you use the following syntax.</p>
+
+    <!-- Create Statement Code -->
+    <div class ="container">
+  <div class = "rowhome">
+    <div class = "row-lg-4 row-md-6 nrow-sm-10 row-xs-14">
+     <button type="button" class="btn-btn-default btn-block" href="#row8Content" data-toggle="collapse"><h5 class="list-group-item-heading"> Creating Database Syntax <span class ="glyphicon glyphicon-chevron-down"></span></h5></button>
+     <div id="row8Content" class="collapse"><code>CREATE DATABASE dbname</code></div></div></div></div>
+<br><br>
+<h2>Creating Tables</h2>
+<p class="text" >Without the CREATE TABLE statement, you won't be able to create tables in a database. Each table must have a name, row and a column. You start off by naming your table and then specifying the names of the columns. You also must say what datatype the column can hold.</p>
+<div class ="container">
+  <div class = "rowhome">
+    <div class = "row-lg-4 row-md-6 nrow-sm-10 row-xs-14">
+     <button type="button" class="btn-btn-default btn-block" href="#row9Content" data-toggle="collapse"><h5 class="list-group-item-heading"> Creating Tables Syntax <span class ="glyphicon glyphicon-chevron-down"></span></h5></button>
+     <div id="row9Content" class="collapse"><pre><code>
+CREATE TABLE table_name
+(
+column_name1 data_type(size),
+column_name2 data_type(size),
+column_name3 data_type(size),
+...
+); </code></pre></div></div></div></div>
+
+<!-- Data Types List  -->
+<h3>Data Types</h3>
+
+<ul>
+    <li class="text">VARCHAR</li>
+    <li class="text">CHAR</li>
+    <li class="text">Boolean</li>
+    <li class="text">Integer</li>
+    <li class="text">Decimal</li>
+    <li class="text">Float</li>
+    <li class="text">Date</li>
+    <li class="text">Time</li>
+
+</ul>
+
+ </div>
+
+
+
+</div>
+</div>
 {% endblock %}
-</html>
